@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version1">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/version1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/armada1940.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-4.5.3-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brezovec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erbk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gympel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/historia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jarmok1982.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto1949.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mesto1973.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mfk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mosty1946.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/namestie1945.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omeste.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/povoden1938.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/povoden1948.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uvod1.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j0BH8hPOzCBv4RDmq1j6rQSEQ7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../T1/Cviko1 - úloha 1" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="" />
+      <created>1602931037933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602931037933</updated>
+      <workItem from="1602931039214" duration="42631000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="522" y="239" key="#Notifications" timestamp="1603042921363">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="239" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1603042921363" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603042417119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603042417119" />
+    <state x="609" y="322" width="370" height="204" key="Github.ShareDialog" timestamp="1603042873553">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="609" y="322" width="370" height="204" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1603042873553" />
+    <state x="750" y="120" key="Github.UntrackedFilesDialog" timestamp="1603042890675">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="750" y="120" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603042890675" />
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603043606035">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603043606035" />
+    <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603015757135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1603015757135" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603017370404">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603017370404" />
+  </component>
+</project>

@@ -1,0 +1,104 @@
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: white;
+}
+
+.navbar {
+    background-color: #080842 !important;
+    position: relative;
+    margin-bottom: 0 !important
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: auto;
+}
+
+body {
+    width: 100vw;
+    background-image: url("uvod1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-size: cover;
+    background-color: #c7cbee;
+}
+
+.lava {
+    position: absolute;
+    height: 91.3%;
+    width: 35.5vw;
+    background-color: #c7cbee;
+}
+
+.prava {
+    position: absolute;
+    height: auto;
+    width: 55vw;
+    margin-left: 40vw;
+    margin-top: 7vh;
+    background-color: #c7cbee;
+    padding: 2vw;
+}
+
+#hlavny_nadpis {
+    margin-top: 5vh;
+}
+
+h1 {
+    font-size: 3.8vmax;
+    text-align: center;
+    text-shadow: -1.5px -1.5px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#podnadpis {
+    margin-top: 7vh;
+}
+
+#podnadpis > h2 {
+    font-size: 2vmax;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#erbk {
+    margin-top: 6vh;
+}
+
+#erbk > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.nadpis {
+    margin-top: 10vh;
+}
+
+.text > p {
+    word-wrap: break-word;
+}
+
+.fotky {
+    background-color: #c7cbee;
+    margin-top: 5vh;
+}
+
+.fotky > p {
+    text-align: center;
+}
+
+.fotky > p > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 65%;
+    height: auto;
+}
+
+.fotky > p > img:hover {
+    transform: scale(1.5);
+}
