@@ -1,3 +1,14 @@
+body {
+    width: 100vw;
+    background-image: url("uvod1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-size: cover;
+    background-color: #c7cbee;
+}
+
 .navbar-dark .navbar-nav .active > .nav-link {
     color: white;
 }
@@ -13,20 +24,9 @@
     height: auto;
 }
 
-body {
-    width: 100vw;
-    background-image: url("uvod1.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-origin: border-box;
-    background-size: cover;
-    background-color: #c7cbee;
-}
-
 .lava {
     position: absolute;
-    height: 91.3%;
+    height: 100%;
     width: 35.5vw;
     background-color: #c7cbee;
 }
@@ -76,6 +76,10 @@ h1 {
 
 .nadpis {
     margin-top: 10vh;
+}
+
+.nadpis > h1 {
+    font-size: 3vmax;
 }
 
 .text > p {
