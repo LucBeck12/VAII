@@ -120,58 +120,34 @@ h1 {
     background-color: #c7cbee;
 }
 
-.column {
+.obrazok {
     flex: 33.33%;
     max-width: 30%;
     min-width: 20%;
     padding: 0 3px;
 }
 
-.column img {
+.obrazok img {
     margin-top: 4vh;
     vertical-align: middle;
     width: 100%;
     padding: 1vmax;
 }
 
-.column img:hover{
+.obrazok img:hover{
     transform: scale(1.2);
 }
 
 @media screen and (max-width: 1200px) {
-    .column {
+    .obrazok {
         flex: 50%;
         max-width: 40%;
     }
-}
 
 @media screen and (max-width: 800px) {
-    .column {
+    .obrazok {
         flex: 60%;
         max-width: 70%;
     }
 }
-/*
-.pamiatky > img {
-    width: 445px;
-    height: 300px;
 }
-
-.pamiatky > img:hover {
-}
-
-.pamiatky {*/
-    /*
-    width: 455px;
-    height: 320px;
-    margin: 0.5em;
-    margin-bottom: 2vh;
-    text-align: center;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    top: 0;
-    caption-side: bottom;
-}*/
