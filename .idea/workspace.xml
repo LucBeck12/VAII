@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version4">
+    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historia.html" beforeDir="false" afterPath="$PROJECT_DIR$/historia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omeste.html" beforeDir="false" afterPath="$PROJECT_DIR$/omeste.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pamiatky.html" beforeDir="false" afterPath="$PROJECT_DIR$/pamiatky.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styly.css" beforeDir="false" afterPath="$PROJECT_DIR$/styly.css" afterDir="false" />
     </list>
@@ -72,7 +75,8 @@
       <workItem from="1603361939702" duration="11380000" />
       <workItem from="1603463610435" duration="4527000" />
       <workItem from="1603469056266" duration="101000" />
-      <workItem from="1603628405327" duration="268000" />
+      <workItem from="1603628405327" duration="332000" />
+      <workItem from="1603628797845" duration="3885000" />
     </task>
     <task id="LOCAL-00001" summary="Version1">
       <created>1603043833114</created>
@@ -102,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603468359996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Version5">
+      <created>1603628704527</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603628704527</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,13 +136,18 @@
     <MESSAGE value="Version2" />
     <MESSAGE value="Version3" />
     <MESSAGE value="Version4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version4" />
+    <MESSAGE value="Version5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="522" y="239" key="#Notifications" timestamp="1603042921363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="239" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1603042921363" />
+    <state x="82" y="43" width="1350" height="638" key="DiffContextDialog" timestamp="1603632318846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="82" y="43" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1603632318846" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603042417119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -144,10 +160,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="750" y="120" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603042890675" />
-    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603468379763">
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603628723382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603468379763" />
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603628723382" />
     <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603015757135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
