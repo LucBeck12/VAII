@@ -41,7 +41,6 @@ body {
     padding: 2vw;
 }
 
-
 #hlavny_nadpis {
     margin-top: 5vh;
 }
@@ -108,7 +107,7 @@ h1 {
     transform: scale(1.5);
 }
 
-.row {
+.galeria {
     position: absolute;
     margin-top: 14vh;
     display: flex;

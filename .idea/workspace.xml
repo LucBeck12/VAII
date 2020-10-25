@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version3">
+    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pamiatky.html" beforeDir="false" afterPath="$PROJECT_DIR$/pamiatky.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styly.css" beforeDir="false" afterPath="$PROJECT_DIR$/styly.css" afterDir="false" />
@@ -70,7 +70,9 @@
       <workItem from="1603184832921" duration="174000" />
       <workItem from="1603207077163" duration="1685000" />
       <workItem from="1603361939702" duration="11380000" />
-      <workItem from="1603463610435" duration="3888000" />
+      <workItem from="1603463610435" duration="4527000" />
+      <workItem from="1603469056266" duration="101000" />
+      <workItem from="1603628405327" duration="268000" />
     </task>
     <task id="LOCAL-00001" summary="Version1">
       <created>1603043833114</created>
@@ -93,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603373619236</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version4">
+      <created>1603468359996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603468359996</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,7 +124,8 @@
     <MESSAGE value="Version1" />
     <MESSAGE value="Version2" />
     <MESSAGE value="Version3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version3" />
+    <MESSAGE value="Version4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="522" y="239" key="#Notifications" timestamp="1603042921363">
@@ -134,10 +144,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="750" y="120" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603042890675" />
-    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603373622549">
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603468379763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603373622549" />
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603468379763" />
     <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603015757135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
