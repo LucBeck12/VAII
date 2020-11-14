@@ -19,20 +19,41 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version5">
+    <list default="true" id="83397bb2-00bc-4e22-875d-9627af44612c" name="Default Changelist" comment="Version6">
+      <change afterPath="$PROJECT_DIR$/App/Views/Home/historia.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Views/Home/index.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Views/Home/omeste.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Views/Home/pamiatky.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/version1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/version1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historia.html" beforeDir="false" afterPath="$PROJECT_DIR$/historia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omeste.html" beforeDir="false" afterPath="$PROJECT_DIR$/omeste.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pamiatky.html" beforeDir="false" afterPath="$PROJECT_DIR$/pamiatky.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styly.css" beforeDir="false" afterPath="$PROJECT_DIR$/styly.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/armada1940.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/armada1940.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brezovec.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/brezovec.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erb.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/erb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erbk.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/erbk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gympel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/gympel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jarmok1982.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/jarmok1982.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapa.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/mapa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto1949.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/mesto1949.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mesto1973.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/mesto1973.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mfk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/mfk.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mosty1946.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/mosty1946.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/namestie1945.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/namestie1945.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omeste.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pamiatky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/povoden1938.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/povoden1938.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/povoden1948.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/povoden1948.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styly.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uvod1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Pictures/uvod1.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/vf-sandbox-master/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -40,6 +61,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="composer.json" />
       </list>
     </option>
   </component>
@@ -57,9 +79,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../T1/Cviko1 - úloha 1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cviko3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Môj priečinok\VŠ\3. ročník\Zimný semester\Vývoj aplikácií pre Internet a Intranet\php_mysql\www\semka\public\Pictures" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +104,10 @@
       <workItem from="1603463610435" duration="4527000" />
       <workItem from="1603469056266" duration="101000" />
       <workItem from="1603628405327" duration="332000" />
-      <workItem from="1603628797845" duration="3885000" />
+      <workItem from="1603628797845" duration="3976000" />
+      <workItem from="1603698864960" duration="2992000" />
+      <workItem from="1604067315582" duration="25000" />
+      <workItem from="1605345464609" duration="10288000" />
     </task>
     <task id="LOCAL-00001" summary="Version1">
       <created>1603043833114</created>
@@ -113,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603628704527</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Version6">
+      <created>1603632799376</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603632799376</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,21 +175,30 @@
     <MESSAGE value="Version3" />
     <MESSAGE value="Version4" />
     <MESSAGE value="Version5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version5" />
+    <MESSAGE value="Version6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="522" y="239" key="#Notifications" timestamp="1603042921363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="239" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1603042921363" />
+    <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1605355055427">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605355055427" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605355046357">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605355046357" />
     <state x="82" y="43" width="1350" height="638" key="DiffContextDialog" timestamp="1603632318846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="82" y="43" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1603632318846" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603042417119">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605345526621">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603042417119" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605345526621" />
     <state x="609" y="322" width="370" height="204" key="Github.ShareDialog" timestamp="1603044071687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -160,10 +207,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="750" y="120" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603042890675" />
-    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603628723382">
+    <state x="321" y="135" key="NewPhpClassDialog" timestamp="1605355032687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603628723382" />
+    <state x="321" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1605355032687" />
+    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1605357008951">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605357008951" />
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603632809519">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="362" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603632809519" />
     <state x="372" y="22" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603015757135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

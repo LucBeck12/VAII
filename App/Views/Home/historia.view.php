@@ -1,68 +1,23 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="styly.css">
-
-    <!--jQuery and JS bundle w/ Popper.js-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-    <title>História mesta</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">
-        <img src="erb.png" alt="erb.jpg, 102kB">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Domov <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="omeste.html">O meste <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="pamiatky.html">Pamiatky <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="historia.html">História <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <div class="lava">
     <div class="nadpis">
         <h1>HISTÓRIA MESTA</h1>
     </div>
     <div class="fotky">
-        <p><img src="povoden1938.jpg" alt="povoden1938.jpg, 74kB" title="1938 - povodeň"></p>
+        <p><img src="public/Pictures/povoden1938.jpg" alt="povoden1938.jpg, 74kB" title="1938 - povodeň"></p>
         <p><b>1938 - povodeň</b></p>
-        <p><img src="armada1940.jpg" alt="armada1940.jpg, 68kB" title="1940 - armáda na námestí"></p>
+        <p><img src="public/Pictures/armada1940.jpg" alt="armada1940.jpg, 68kB" title="1940 - armáda na námestí"></p>
         <p><b>1940 - armáda na námestí</b></p>
-        <p><img src="namestie1945.jpg" alt="namestie1945.jpg, 108kB" title="1938 - Námestie P.O.H."></p>
+        <p><img src="public/Pictures/namestie1945.jpg" alt="namestie1945.jpg, 108kB" title="1938 - Námestie P.O.H."></p>
         <p><b>1945 - Námestie P.O.H.</b></p>
-        <p><img src="mosty1946.jpg" alt="mosty1946.jpg, 85kB" title="1946 - mosty cez rieku Orava"></p>
+        <p><img src="public/Pictures/mosty1946.jpg" alt="mosty1946.jpg, 85kB" title="1946 - mosty cez rieku Orava"></p>
         <p><b>1946 - mosty cez rieku Orava</b></p>
-        <p><img src="povoden1948.jpg" alt="povoden1948.jpg, 70kB" title="1948 - povodeň"></p>
+        <p><img src="public/Pictures/povoden1948.jpg" alt="povoden1948.jpg, 70kB" title="1948 - povodeň"></p>
         <p><b>1948 - povodeň</b></p>
-        <p><img src="mesto1949.jpg" alt="mesto1949.jpg, 59kB" title="1949 - mesto"></p>
+        <p><img src="public/Pictures/mesto1949.jpg" alt="mesto1949.jpg, 59kB" title="1949 - mesto"></p>
         <p><b>1949 - mesto</b></p>
-        <p><img src="mesto1973.jpg" alt="mesto1973.jpg, 219kB" title="1973 - mesto"></p>
+        <p><img src="public/Pictures/mesto1973.jpg" alt="mesto1973.jpg, 219kB" title="1973 - mesto"></p>
         <p><b>1973 - mesto</b></p>
-        <p><img src="jarmok1982.jpg" alt="jarmok1982.jpg, 188kB" title="1982 - jarmok"></p>
+        <p><img src="public/Pictures/jarmok1982.jpg" alt="jarmok1982.jpg, 188kB" title="1982 - jarmok"></p>
         <p><b>1982 - jarmok</b></p>
     </div>
 </div>
@@ -168,5 +123,3 @@
             udeľovanie cien Fair-play MUDr. Ivana Chodáka.</p>
     </div>
 </div>
-</body>
-</html>

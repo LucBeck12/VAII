@@ -1,60 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="styly.css">
-
-    <!--jQuery and JS bundle w/ Popper.js-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-    <title>O meste</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">
-        <img src="erb.png" alt="erb.jpg, 102kB">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Domov <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="omeste.html">O meste <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="pamiatky.html">Pamiatky <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="historia.html">História <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <div class="lava">
     <div class="nadpis">
         <h1>O MESTE</h1>
     </div>
     <div class="fotky">
-        <p><img src="mapa.png" alt="mapa.png, 249kB" title="poloha Dolného Kubína"></p>
+        <p><img src="public/Pictures/mapa.png" alt="mapa.png, 249kB" title="poloha Dolného Kubína"></p>
         <p><b>poloha Dolného Kubína</b></p>
-        <p><img src="brezovec.jpg" alt="brezovec.jpg, 76kB" title="sídlisko Brezovec"></p>
+        <p><img src="public/Pictures/brezovec.jpg" alt="brezovec.jpg, 76kB" title="sídlisko Brezovec"></p>
         <p><b>sídlisko Brezovec</b></p>
-        <p><img src="gympel.jpg" alt="gympel.jpg, 205kB" title="Gymnázium P.O.Hviezdoslava"></p>
+        <p><img src="public/Pictures/gympel.jpg" alt="gympel.jpg, 205kB" title="Gymnázium P.O.Hviezdoslava"></p>
         <p><b>Gymnázium P.O.Hviezdoslava</b></p>
-        <p><img src="mfk.jpg" alt="mfk.jpg, 126kB" title="Štadión MUdr. Ivana Chodáka"></p>
+        <p><img src="public/Pictures/mfk.jpg" alt="mfk.jpg, 126kB" title="Štadión MUdr. Ivana Chodáka"></p>
         <p><b>Štadión MUDr. Ivana Chodáka</b></p>
     </div>
 </div>
@@ -116,5 +71,4 @@
         </ul>
     </div>
 </div>
-</body>
-</html>
+
