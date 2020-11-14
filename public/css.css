@@ -9,7 +9,7 @@ body {
     background-color: #c7cbee;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
@@ -22,13 +22,6 @@ body {
 .navbar-brand img {
     width: 30px;
     height: auto;
-}
-
-.lavaUvod {
-    position: absolute;
-    height: 100%;
-    width: 35.5vw;
-    background-color: #c7cbee;
 }
 
 .lava {
@@ -126,6 +119,18 @@ h1 {
     background-color: #c7cbee;
 }
 
+.inzercia {
+    width: 92vw;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    justify-content: center;
+}
+
+.card {
+    margin: 3vw;
+    height: fit-content;
+}
+
 .obrazok {
     flex: 33.33%;
     max-width: 30%;
@@ -145,7 +150,7 @@ h1 {
 }
 
 @media screen and (max-width: 1200px) {
-    .lavaUvod {
+    .uvod {
         width: 45vw;
     }
 
@@ -168,7 +173,7 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) {
-    .lavaUvod {
+    .uvod {
         width: 55vw;
     }
 
@@ -186,7 +191,7 @@ h1 {
 }
 
 @media screen and (max-width: 800px) {
-    .lavaUvod {
+    .uvod {
         width: 65vw;
     }
 
@@ -201,7 +206,7 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-    .lavaUvod {
+    .uvod {
         width: 75vw;
     }
 
@@ -211,7 +216,7 @@ h1 {
 }
 
 @media screen and (max-width: 200px) {
-    .lavaUvod {
+    .uvod {
         width: 100vw;
     }
 

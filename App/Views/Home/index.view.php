@@ -1,4 +1,4 @@
-<div class="lavaUvod">
+<div class="lava uvod">
     <div id="hlavny_nadpis">
         <h1>DOLNÝ KUBÍN</h1>
     </div>
