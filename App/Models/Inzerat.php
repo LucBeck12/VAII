@@ -7,9 +7,9 @@ class Inzerat extends Model
 {
     protected $id;
     protected $nadpis;
+    protected $text;
     protected $typ;
     protected $kategoria;
-    protected $text;
     protected $cena;
     protected $telefonneCislo;
     protected $email;
@@ -27,9 +27,9 @@ class Inzerat extends Model
     public function __construct($nadpis = "", $text = "", $typ = "", $kategoria = "", $cena = "", $telefonneCislo = "", $email = "")
     {
         $this->nadpis = $nadpis;
+        $this->text = $text;
         $this->typ = $typ;
         $this->kategoria = $kategoria;
-        $this->text = $text;
         $this->cena = $cena;
         $this->tel = $telefonneCislo;
         $this->email = $email;
@@ -37,7 +37,7 @@ class Inzerat extends Model
 
     static public function setDbColumns()
     {
-        return ['id', 'nadpis', 'typ', 'kategoria', 'text', 'cena', 'telefonneCislo', 'email'];
+        return ['id', 'nadpis', 'text', 'typ', 'kategoria', 'cena', 'telefonneCislo', 'email'];
     }
 
     static public function setTableName()

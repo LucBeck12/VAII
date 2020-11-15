@@ -1,12 +1,17 @@
 <?php /** @var Array $data */ ?>
 
 <div class="galeria inzercia">
+    <div id="h2index">
+        <h2 ">Mestská inzercia</h2>
+    </div>
     <?php /** @var \App\Models\Inzerat $inzerat */
+
     foreach ($data as $inzerat) { ?>
         <div class="card obrazok" style="width: 18rem;">
             <!--<img class="card-img-top" src="..." alt="Card image cap">-->
             <div class="card-body">
                 <h5 class="card-title"><?= $inzerat->getNadpis() ?></h5>
+                <p class="card-text"><?= $inzerat->getText() ?></p>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><b>Typ: </b><?= $inzerat->getTyp() ?> </li>
@@ -25,8 +30,9 @@
             </ul>
             <div class="card-body">
                 <a href="#" class="card-link">Podrobnosti</a>
-                <a href="#" class="card-link">Upravit</a>
-                <a href="#" class="card-link">Zmazat</a>
+                <a class="card-link" href="?c=inzercia&a=uprav&id=<?= $inzerat->getId() ?>">Upravit</a>
+                <a class="card-link" href="?c=inzercia&a=zmaz&id=<?= $inzerat->getId() ?>">Zmazat</a>
+
             </div>
         </div>
     <?php } ?>

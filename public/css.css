@@ -120,15 +120,10 @@ h1 {
 }
 
 .inzercia {
+    position: absolute;
     width: 92vw;
     margin-top: 4vh;
     margin-left: 4vw;
-    justify-content: center;
-}
-
-.card {
-    margin: 3vw;
-    height: fit-content;
 }
 
 .obrazok {
@@ -136,6 +131,13 @@ h1 {
     max-width: 30%;
     min-width: 20%;
     padding: 0 3px;
+}
+
+.card {
+    margin: 3vw;
+    margin-top: 4vh;
+    height: fit-content;
+    max-width: 25%;
 }
 
 .obrazok img {
@@ -147,6 +149,37 @@ h1 {
 
 .obrazok img:hover {
     transform: scale(1.2);
+}
+
+.kategoria {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#eur {
+    font-size: larger;
+    margin-right: 0.5vw;
+}
+
+.formular {
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: 7vh;
+}
+
+#h2pridat {
+    margin-bottom: 2vh;
+}
+
+#h2index {
+    height: fit-content;
+    width: 92vw;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 2vh;
 }
 
 @media screen and (max-width: 1200px) {
