@@ -28,10 +28,4 @@ class DBStorage
         }
         return $result;
     }
-
-    /**public function Save(Article $param)
-    {
-        $statement = $this->pdo->prepare("INSERT INTO articles (title, text) value (?,?)");
-        $statement->execute([$param->getTitle(), $param->getText()]);
-    }**/
 }

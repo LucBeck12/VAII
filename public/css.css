@@ -124,6 +124,7 @@ h1 {
     width: 92vw;
     margin-top: 4vh;
     margin-left: 4vw;
+    justify-content: left;
 }
 
 .obrazok {
@@ -164,11 +165,14 @@ h1 {
 .formular {
     width: 75vw;
     margin-left: 12.5vw;
-    margin-top: 7vh;
+    margin-top: -2vh;
 }
 
 #h2pridat {
     margin-bottom: 2vh;
+    margin-left: 1vw;
+    margin-top: 7vh;
+    background: #c7cbee;
 }
 
 #h2index {
@@ -180,6 +184,20 @@ h1 {
 
 .btn {
     margin-top: 2vh;
+}
+
+.nadpisInz {
+    background-color: #c7cbee;
+}
+
+#cancel {
+    background-color: darkslategray;
+    color: white;
+}
+
+.chyby {
+    margin-top: 1vh;
+    padding-left: 0.5vw;
 }
 
 @media screen and (max-width: 1200px) {

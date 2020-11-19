@@ -31,7 +31,7 @@ class Inzerat extends Model
         $this->typ = $typ;
         $this->kategoria = $kategoria;
         $this->cena = $cena;
-        $this->tel = $telefonneCislo;
+        $this->telefonneCislo = $telefonneCislo;
         $this->email = $email;
     }
 
@@ -64,6 +64,14 @@ class Inzerat extends Model
     /**
      * @return mixed
      */
+    public function getText()
+    {
+        return $this->text;
+    }
+
+    /**
+     * @return mixed
+     */
     public function getTyp()
     {
         return $this->typ;
@@ -75,14 +83,6 @@ class Inzerat extends Model
     public function getKategoria()
     {
         return $this->kategoria;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getText()
-    {
-        return $this->text;
     }
 
     /**
@@ -107,5 +107,61 @@ class Inzerat extends Model
     public function getEmail()
     {
         return $this->email;
+    }
+
+    /**
+     * @param mixed|string $nadpis
+     */
+    public function setNadpis($nadpis): void
+    {
+        $this->nadpis = $nadpis;
+    }
+
+    /**
+     * @param mixed|string $text
+     */
+    public function setText($text): void
+    {
+        $this->text = $text;
+    }
+
+    /**
+     * @param mixed|string $typ
+     */
+    public function setTyp($typ): void
+    {
+        $this->typ = $typ;
+    }
+
+    /**
+     * @param mixed|string $kategoria
+     */
+    public function setKategoria($kategoria): void
+    {
+        $this->kategoria = $kategoria;
+    }
+
+    /**
+     * @param mixed|string $cena
+     */
+    public function setCena($cena): void
+    {
+        $this->cena = $cena;
+    }
+
+    /**
+     * @param mixed|string $telefonneCislo
+     */
+    public function setTelefonneCislo($telefonneCislo): void
+    {
+        $this->telefonneCislo = $telefonneCislo;
+    }
+
+    /**
+     * @param mixed|string $email
+     */
+    public function setEmail($email): void
+    {
+        $this->email = $email;
     }
 }
