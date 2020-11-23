@@ -34,7 +34,6 @@ class InzerciaController extends AControllerBase
             $inzerat = Inzerat::getOne($_GET['id']);
             $inzerat->delete();
         }
-
         header("Location: http://localhost/semka/?c=inzercia");
     }
 
