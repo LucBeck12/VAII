@@ -3,13 +3,13 @@
         <h1>O MESTE</h1>
     </div>
     <div class="fotky">
-        <p><img src="public/Pictures/mapa.png" alt="mapa.png, 249kB" title="poloha Dolného Kubína"></p>
+        <p><img src="semka/public/Pictures/mapa.png" alt="mapa.png, 249kB" title="poloha Dolného Kubína"></p>
         <p><b>poloha Dolného Kubína</b></p>
-        <p><img src="public/Pictures/brezovec.jpg" alt="brezovec.jpg, 76kB" title="sídlisko Brezovec"></p>
+        <p><img src="semka/public/Pictures/brezovec.jpg" alt="brezovec.jpg, 76kB" title="sídlisko Brezovec"></p>
         <p><b>sídlisko Brezovec</b></p>
-        <p><img src="public/Pictures/gympel.jpg" alt="gympel.jpg, 205kB" title="Gymnázium P.O.Hviezdoslava"></p>
+        <p><img src="semka/public/Pictures/gympel.jpg" alt="gympel.jpg, 205kB" title="Gymnázium P.O.Hviezdoslava"></p>
         <p><b>Gymnázium P.O.Hviezdoslava</b></p>
-        <p><img src="public/Pictures/mfk.jpg" alt="mfk.jpg, 126kB" title="Štadión MUdr. Ivana Chodáka"></p>
+        <p><img src="semka/public/Pictures/mfk.jpg" alt="mfk.jpg, 126kB" title="Štadión MUdr. Ivana Chodáka"></p>
         <p><b>Štadión MUDr. Ivana Chodáka</b></p>
     </div>
 </div>

@@ -102,7 +102,7 @@
                 } ?>
             </div>
         </div>
-        <input class="btn btn-primary" type="submit" value="Odoslať">
+        <input class="btn btn-primary" type="submit" name = "submit" value="Odoslať">
         <a href="?c=inzercia" id="cancel" name="cancel" class="btn btn-default">Zrušiť</a>
     </form>
 </div>
