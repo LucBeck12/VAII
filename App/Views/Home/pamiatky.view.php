@@ -17,7 +17,8 @@
         <p><b>Kolonádový most</b></p>
     </div>
     <div class="obrazok">
-        <img src="semka/public/Pictures/kostolK.png" alt="kostolK.png, 419kB" title="Kostol sv. Kataríny Alexandrijskej">
+        <img src="semka/public/Pictures/kostolK.png" alt="kostolK.png, 419kB"
+             title="Kostol sv. Kataríny Alexandrijskej">
         <p><b>Kostol sv. Kataríny Alexandrijskej</b></p>
     </div>
     <div class="obrazok">

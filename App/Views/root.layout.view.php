@@ -1,3 +1,6 @@
+<?php
+/** @var string $contentHTML */
+?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -15,6 +18,7 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://localhost/semka/public/css.css">
+    <script src="http://localhost/semka/public/photos.js"></script>
 </head>
 <body>
 
@@ -35,10 +39,10 @@
                 <a class="nav-link" href="?c=home&a=omeste">O meste <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="?c=home&a=pamiatky">Pamiatky <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="?c=home&a=historia">História <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="?c=home&a=historia">História <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="?c=home&a=pamiatky">Pamiatky <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,8 +54,27 @@
                     <a class="dropdown-item" href="?c=inzercia&a=pridaj">Pridaj inzerat</a>
                 </div>
             </li>
-        </ul>
-    </div>
+            <li class="nav-item active">
+                <a class="nav-link" href="?c=forum">Fórum <span class="sr-only">(current)</span></a>
+            </li>
+            <?php if (!\App\Models\Auth::getInstance()->isLogged()) { ?>
+                <li class="nav-item active">
+                    <a class="nav-link" href="?c=login">Login <span class="sr-only">(current)</span></a>
+                </li>
+            <?php } else { ?>
+            <li class="nav-item active">
+                <a class="nav-link" href="?c=forum&a=pridat">Pridaj príspevok <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active nav-link">
+                Prihlásený používateľ: <?= \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() ?>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="?c=login&a=logout">Odhlásiť <span class="sr-only">(current)</span></a>
+            </li>
+</nav>
+<?php } ?>
+</ul>
+</div>
 </nav>
 
 <!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">

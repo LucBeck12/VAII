@@ -9,6 +9,10 @@ body {
     background-color: #c7cbee;
 }
 
+.table .table-striped {
+    color: white !important;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
@@ -168,11 +172,33 @@ h1 {
     margin-top: -2vh;
 }
 
+.form-signin {
+    width: 50vw;
+}
+
+.formularLogin {
+    width: 50vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+}
+
 #h2pridat {
     margin-bottom: 2vh;
     margin-left: 1vw;
     margin-top: 7vh;
     background: #c7cbee;
+}
+
+#loginIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #h2index {
@@ -188,6 +214,9 @@ h1 {
 
 .nadpisInz {
     background-color: #c7cbee;
+    box-shadow: 2px 2px 2px 2px;
+    justify-content: center;
+    display: flex;
 }
 
 #cancel {
@@ -198,6 +227,14 @@ h1 {
 .chyby {
     margin-top: 1vh;
     padding-left: 0.5vw;
+}
+
+.form-control {
+    margin-bottom: 2vh;
+}
+
+.h2, h2 {
+    padding-bottom: 2vh;
 }
 
 @media screen and (max-width: 1200px) {
