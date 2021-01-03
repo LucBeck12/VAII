@@ -18,7 +18,7 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://localhost/semka/public/css.css">
-    <script src="http://localhost/semka/public/photos.js"></script>
+    <script src="http://localhost/semka/public/prispevky.js"></script>
 </head>
 <body>
 
@@ -65,6 +65,9 @@
             <li class="nav-item active">
                 <a class="nav-link" href="?c=forum&a=pridat">Pridaj príspevok <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="?c=forum&a=mojprofil">Moje príspevky <span class="sr-only">(current)</span></a>
+            </li>
             <li class="nav-item active nav-link">
                 Prihlásený používateľ: <?= \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() ?>
             </li>
@@ -76,6 +79,7 @@
 </ul>
 </div>
 </nav>
+<p type="hidden" id="loggedUser" class="hidden"><?=\App\Models\Auth::getInstance()->getLoggedUser()->getLogin()?></p>
 
 <!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">Super úžasná stránka</h5>

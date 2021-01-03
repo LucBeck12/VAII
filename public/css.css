@@ -138,7 +138,7 @@ h1 {
     padding: 0 3px;
 }
 
-.card {
+.cardInzerat {
     margin: 3vw;
     margin-top: 4vh;
     height: fit-content;
@@ -229,12 +229,39 @@ h1 {
     padding-left: 0.5vw;
 }
 
+.cardComments {
+    width: 71vw;
+    padding: 2vw;
+}
+
+.comment-footer {
+    padding-bottom: 3vh;
+}
+
+#comment {
+    width: 71vw;
+}
+
 .form-control {
     margin-bottom: 2vh;
 }
 
+.hidden {
+    display: none;
+}
+
 .h2, h2 {
     padding-bottom: 2vh;
+}
+
+#zmazatPrispevok {
+    font-size: 0.8rem;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+td {
+    vertical-align: middle !important;
 }
 
 @media screen and (max-width: 1200px) {

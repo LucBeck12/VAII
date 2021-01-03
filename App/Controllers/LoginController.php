@@ -5,6 +5,8 @@ namespace App\Controllers;
 
 use App\Core\AControllerBase;
 use App\Models\Auth;
+use App\Models\Prispevok;
+use App\Models\User;
 
 class LoginController extends AControllerBase
 {
@@ -43,8 +45,7 @@ class LoginController extends AControllerBase
         return $this->html($data, 'login');
     }*/
 
-    public
-    function logout()
+    public function logout()
     {
         Auth::getInstance()->logout();
         //header("Location: ?");
@@ -84,8 +85,7 @@ class LoginController extends AControllerBase
         }
     }*/
 
-    public
-    function validuj($login, $heslo)
+    public function validuj($login, $heslo)
     {
         $chybyLoginu = [];
         $chybyHesla = [];

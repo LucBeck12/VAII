@@ -7,34 +7,34 @@ use App\Core\Model;
 use JsonSerializable;
 use stdClass;
 
-class Forum extends Model implements JsonSerializable
+class Komentar extends Model implements JsonSerializable
 {
     protected $id;
-    protected $user_login;
-    protected $nazov;
+    protected $user;
+    protected $prispevok;
     protected $text;
 
-    public function __construct($user_login = '', $nazov = '', $text = '')
+    public function __construct($user = '', $prispevok = '', $text = '')
     {
-        $this->user_login = $user_login;
-        $this->nazov = $nazov;
+        $this->user = $user;
+        $this->prispevok = $prispevok;
         $this->text = $text;
     }
 
     /**
-     * @return mixed|string
+     * @return mixed
      */
-    public function getNazov()
+    public function getPrispevok()
     {
-        return $this->nazov;
+        return $this->prispevok;
     }
 
     /**
-     * @param mixed|string $popis
+     * @param mixed $prispevok
      */
-    public function setNazov($nazov): void
+    public function setPrispevok($prispevok): void
     {
-        $this->nazov = $nazov;
+        $this->inzerat = $prispevok;
     }
 
     /**
@@ -72,35 +72,35 @@ class Forum extends Model implements JsonSerializable
     /**
      * @return mixed|string
      */
-    public function getUserLogin()
+    public function getUser()
     {
-        return $this->user_login;
+        return $this->user;
     }
 
     /**
-     * @param mixed|string $user_login
+     * @param mixed|string $user
      */
-    public function setUserLogin($user_login): void
+    public function setUser($user): void
     {
-        $this->user_login = $user_login;
+        $this->user = $user;
     }
 
     static public function setDbColumns()
     {
-        return ["id", "user_login", "nazov", "text"];
+        return ["id", "user", "prispevok", "text"];
     }
 
     static public function setTableName()
     {
-        return "prispevok";
+        return "komentar";
     }
 
     public function jsonSerialize()
     {
         $o = new stdClass();
         $o->id = $this->id;
-        $o->user_login = User::getAll(" login LIKE ? ", [$this->user_login]);
-        $o->nazov = $this->nazov;
+        $o->user = $this->user;
+        $o->prispevok = $this->prispevok;
         $o->text = $this->text;
         return $o;
     }

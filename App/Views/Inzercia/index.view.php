@@ -7,7 +7,7 @@
     <?php /** @var \App\Models\Inzerat $inzerat */
 
     foreach ($data as $inzerat) { ?>
-        <div class="card obrazok" style="width: 18rem;">
+        <div class="cardInzerat obrazok" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?= $inzerat->getNadpis() ?></h5>
                 <p class="card-text"><?= $inzerat->getText() ?></p>

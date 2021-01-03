@@ -1,14 +1,10 @@
-<?php /** @var Array $data */ ?>
-
+<?php /** @var \App\Models\Prispevok $data */ ?>
 <div class="galeria inzercia">
-    <div id="h2index">
-        <h2>Mestské fórum</h2>
-    </div>
-    <table class="table table-striped table-light" id="table">
+    <h2 id="h2pridat">Moje príspevky </h2>
+    <table class="table table-striped table-light" id="table2">
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Pridal</th>
             <th scope="col">Názov</th>
         </tr>
         </thead>
