@@ -9,10 +9,6 @@ body {
     background-color: #c7cbee;
 }
 
-.table .table-striped {
-    color: white !important;
-}
-
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
@@ -32,7 +28,173 @@ body {
     position: absolute;
     height: 100%;
     width: 35.5vw;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.modrePozadie {
     background-color: #c7cbee;
+}
+
+.hlavnyNadpis {
+    font-size: 50px;
+    margin-top: 5vh;
+}
+
+#erbk {
+    margin-top: 6vh;
+}
+
+.erbK {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17.5vw;
+    height: auto;
+}
+
+#podnadpis {
+    margin-top: 7vh;
+}
+
+.podnadpis {
+    font-size: 2vmax;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.zaklad {
+    position: absolute;
+    height: auto;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 7vh;
+    padding: 2vw;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.nadpis {
+    font-size: 8px;
+}
+
+.text > p {
+    word-wrap: break-word;
+}
+
+.fotogaleria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto {
+    flex: 45%;
+    max-width: 40%;
+    min-width: 20%;
+    padding: 0 3px;
+}
+
+.foto > img {
+    width: 100%;
+    padding: 1vmax;
+}
+
+.foto > img:hover {
+    transform: scale(1.5);
+}
+
+.popis {
+    display: block;
+    padding: 0 3px;
+}
+
+.foto2 {
+    flex: 33.33%;
+    max-width: 30%;
+    min-width: 20%;
+}
+
+.cardInzerat {
+    height: fit-content;
+    margin: 3vw;
+    margin-top: 4vh;
+    max-width: 25%;/*
+    width: 100%;
+    flex: 30%;
+    max-width: 25%;
+    min-width: 20%;
+    padding: 0 3px;*/
+}
+
+.chyby {
+    margin-top: 1vh;
+    padding-left: 0.5vw;
+}
+
+.buttonForm {
+    margin-top: 2vh;
+}
+
+#cancel {
+    background-color: darkslategray;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.formular {
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: -2vh;
+}
+
+.nadpisInz {
+    background-color: #c7cbee;
+    box-shadow: 2px 2px 2px 2px;
+    justify-content: center;
+    display: flex;
+}
+
+/*.inzercia {
+    position: absolute;
+    width: 92vw;
+    margin-top: 4vh;
+    margin-left: 4vw;
+    justify-content: left;
+}*/
+
+
+
+
+
+
+
+.marginR5 {
+    margin-right: 5vw;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.floatLeft {
+    float: left;
+}
+
+
+.gympel {
+    width: 45%;
+}
+
+.table .table-striped {
+    color: white !important;
 }
 
 .prava {
@@ -45,50 +207,20 @@ body {
     padding: 2vw;
 }
 
-#hlavny_nadpis {
-    margin-top: 5vh;
-}
-
 h1 {
-    font-size: 4vmax;
+    /*font-size: 4vmax;*/
     text-align: center;
     text-shadow: -1.5px -1.5px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-#podnadpis {
-    margin-top: 7vh;
-}
-
-#podnadpis > h2 {
-    font-size: 2vmax;
-    text-align: center;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-#erbk {
-    margin-top: 6vh;
-}
-
-#erbk > img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 17.5vw;
-    height: auto;
-}
-
-.nadpis {
+/*.nadpis {
     margin-top: 8vh;
 }
 
 .nadpis > h1 {
     font-size: calc(10px + 2vmax);
-}
-
-.text > p {
-    word-wrap: break-word;
-}
+}*/
 
 .fotky {
     background-color: #c7cbee;
@@ -123,39 +255,6 @@ h1 {
     background-color: #c7cbee;
 }
 
-.inzercia {
-    position: absolute;
-    width: 92vw;
-    margin-top: 4vh;
-    margin-left: 4vw;
-    justify-content: left;
-}
-
-.obrazok {
-    flex: 33.33%;
-    max-width: 30%;
-    min-width: 20%;
-    padding: 0 3px;
-}
-
-.cardInzerat {
-    margin: 3vw;
-    margin-top: 4vh;
-    height: fit-content;
-    max-width: 25%;
-}
-
-.obrazok img {
-    margin-top: 4vh;
-    vertical-align: middle;
-    width: 100%;
-    padding: 1vmax;
-}
-
-.obrazok img:hover {
-    transform: scale(1.2);
-}
-
 .kategoria {
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -164,12 +263,6 @@ h1 {
 #eur {
     font-size: larger;
     margin-right: 0.5vw;
-}
-
-.formular {
-    width: 75vw;
-    margin-left: 12.5vw;
-    margin-top: -2vh;
 }
 
 .form-signin {
@@ -208,27 +301,6 @@ h1 {
     text-align: center;
 }
 
-.btn {
-    margin-top: 2vh;
-}
-
-.nadpisInz {
-    background-color: #c7cbee;
-    box-shadow: 2px 2px 2px 2px;
-    justify-content: center;
-    display: flex;
-}
-
-#cancel {
-    background-color: darkslategray;
-    color: white;
-}
-
-.chyby {
-    margin-top: 1vh;
-    padding-left: 0.5vw;
-}
-
 .cardComments {
     width: 71vw;
     padding: 2vw;
@@ -255,9 +327,8 @@ h1 {
 }
 
 #zmazatPrispevok {
-    font-size: 0.8rem;
-    margin-top: 1vh;
-    margin-bottom: 0;
+    font-size: 0.7rem;
+    margin: 0;
 }
 
 td {
@@ -269,22 +340,25 @@ td {
         width: 45vw;
     }
 
-    h1 {
-        font-size: 5vmax;
-    }
-
-    #podnadpis > h2 {
-        font-size: 3vmax;
-    }
-
-    #erbk > img {
+    .erbK {
         width: 22vw;
     }
 
-    .obrazok {
+    .podnadpis {
+        font-size: 3vmax;
+    }
+
+    .foto {
         flex: 50%;
+        max-width: 50%;
+    }
+
+    .foto2 {
         max-width: 40%;
     }
+    /*h1 {
+        font-size: 5vmax;
+    }*/
 }
 
 @media screen and (max-width: 1000px) {
@@ -292,17 +366,17 @@ td {
         width: 55vw;
     }
 
-    h1 {
-        font-size: 6vmax;
+    .erbK {
+        width: 26vw;
     }
 
-    #podnadpis > h2 {
+    .podnadpis {
         font-size: 3vmax;
     }
 
-    #erbk > img {
-        width: 26vw;
-    }
+    /*h1 {
+        font-size: 6vmax;
+    }*/
 }
 
 @media screen and (max-width: 800px) {
@@ -310,13 +384,21 @@ td {
         width: 65vw;
     }
 
-    #erbk > img {
+    .erbK {
         width: 35vw;
     }
 
-    .obrazok {
+    .foto {
         flex: 60%;
+        max-width: 80%;
+    }
+
+    .foto2 {
         max-width: 70%;
+    }
+
+    .cardInzerat {
+        max-width: 90%;
     }
 }
 
@@ -325,7 +407,7 @@ td {
         width: 75vw;
     }
 
-    #erbk > img {
+    .erbK {
         width: 46vw;
     }
 }
@@ -335,7 +417,7 @@ td {
         width: 100vw;
     }
 
-    #erbk > img {
+    .erbK {
         width: 73vw;
     }
 }

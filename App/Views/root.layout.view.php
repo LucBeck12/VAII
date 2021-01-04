@@ -54,32 +54,39 @@
                     <a class="dropdown-item" href="?c=inzercia&a=pridaj">Pridaj inzerat</a>
                 </div>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="?c=forum">Fórum <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Fórum
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="?c=forum">Pozri fórum</a>
+                    <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?>
+                        <a class="dropdown-item" href="?c=forum&a=pridat">Pridaj príspevok</a>
+                        <a class="dropdown-item" href="?c=forum&a=mojprofil">Moje príspevky</a>
+                    <?php } ?>
+                </div>
             </li>
+        </ul>
+        <ul class="navbar-nav text-right">
             <?php if (!\App\Models\Auth::getInstance()->isLogged()) { ?>
                 <li class="nav-item active">
                     <a class="nav-link" href="?c=login">Login <span class="sr-only">(current)</span></a>
                 </li>
             <?php } else { ?>
-            <li class="nav-item active">
-                <a class="nav-link" href="?c=forum&a=pridat">Pridaj príspevok <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="?c=forum&a=mojprofil">Moje príspevky <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active nav-link">
-                Prihlásený používateľ: <?= \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() ?>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="?c=login&a=logout">Odhlásiť <span class="sr-only">(current)</span></a>
-            </li>
+                <li class="nav-item active nav-link">
+                    Prihlásený používateľ: <?= \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() ?>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="?c=login&a=logout">Odhlásiť <span class="sr-only">(current)</span></a>
+                </li>
+            <?php } ?>
+        </ul>
+    </div>
 </nav>
-<?php } ?>
-</ul>
-</div>
-</nav>
-<p type="hidden" id="loggedUser" class="hidden"><?=\App\Models\Auth::getInstance()->getLoggedUser()->getLogin()?></p>
+<p type="hidden" id="loggedUser"
+   class="hidden"><?= (\App\Models\Auth::getInstance()->isLogged()) ? \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() : "" ?>
+</p>
 
 <!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">Super úžasná stránka</h5>
@@ -91,8 +98,7 @@
 </div>-->
 
 <div class="web-content">
-    <?= /** @var TYPE_NAME $contentHTML */
-    $contentHTML ?>
+    <?= $contentHTML ?>
 </div>
 </body>
 </html>

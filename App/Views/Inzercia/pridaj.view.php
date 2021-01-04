@@ -1,6 +1,8 @@
-<div class="container formular nadpisInz">
-    <h2 id="h2pridat">Pridanie nového inzerátu</h2>
+<div class="zaklad modrePozadie">
+    <div class="nadpis">
+        <h1>PRIDANIE NOVÉHO INZERÁTU</h1>
+    </div>
+    <?php
+    include "formular.view.php";
+    ?>
 </div>
-
-<?php
-include "formular.view.php";

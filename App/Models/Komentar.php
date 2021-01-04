@@ -100,7 +100,7 @@ class Komentar extends Model implements JsonSerializable
         $o = new stdClass();
         $o->id = $this->id;
         $o->user = $this->user;
-        $o->prispevok = $this->prispevok;
+        $o->name = $this->prispevok;
         $o->text = $this->text;
         return $o;
     }

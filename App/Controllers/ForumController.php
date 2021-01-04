@@ -18,7 +18,7 @@ class ForumController extends AControllerBase
 
     public function pridat()
     {
-        if(isset($_POST['nadpis']) && isset($_POST['text'])) {
+        if (isset($_POST['nadpis']) && isset($_POST['text'])) {
             $login = Auth::getInstance()->getLoggedUser()->getLogin();
             $prispevok = new Prispevok($login, $_POST['nadpis'], $_POST['text']);
             $prispevok->save();
@@ -28,36 +28,49 @@ class ForumController extends AControllerBase
         return $this->html();
     }
 
-    public function profil() {
+    public function profil()
+    {
         return $this->html();
     }
 
-    public function mojprofil() {
+    public function mojprofil()
+    {
         return $this->html();
     }
 
-    public function prispevok() {
-        if(isset($_POST['komentar'])) {
-           $this->pridajKomentar($_POST['komentar']);
+    public function prispevok()
+    {
+        if (isset($_POST['komentar'])) {
+            $this->pridajKomentar($_POST['komentar']);
         }
         return $this->html();
     }
 
-    public function pridajKomentar($komentar) {
-            $login = Auth::getInstance()->getLoggedUser()->getLogin();
-            $idPrispevku = $_POST['idPrispevku'];
-            $comment = new Komentar($login, $idPrispevku, $komentar);
-            $comment->save();
-            $this->json("ok");
+    public function pridajKomentar($komentar)
+    {
+        $login = Auth::getInstance()->getLoggedUser()->getLogin();
+        $idPrispevku = $_POST['idPrispevku'];
+        $comment = new Komentar($login, $idPrispevku, $komentar);
+        $comment->save();
+        $this->json("ok");
     }
 
     public function zmaz()
     {
         if (isset($_GET['id'])) {
-            $prispevok= Prispevok::getOne($_GET['id']);
+            $prispevok = Prispevok::getOne($_GET['id']);
             $prispevok->delete();
         }
         return $this->redirect('?c=forum');
+    }
+
+    public function zmazKomentar()
+    {
+        if (isset($_GET['id'])) {
+            $komentar = Komentar::getOne($_GET['id']);
+            $komentar->delete();
+        }
+        return $this->redirect('?c=forum&a=prispevok');
     }
 
     public function getallprispevky()

@@ -1,27 +1,7 @@
-<div class="lava">
+<div class="zaklad modrePozadie tien">
     <div class="nadpis">
         <h1>HISTÓRIA MESTA</h1>
     </div>
-    <div class="fotky">
-        <p><img src="semka/public/Pictures/povoden1938.jpg" alt="povoden1938.jpg, 74kB" title="1938 - povodeň"></p>
-        <p><b>1938 - povodeň</b></p>
-        <p><img src="semka/public/Pictures/armada1940.jpg" alt="armada1940.jpg, 68kB" title="1940 - armáda na námestí"></p>
-        <p><b>1940 - armáda na námestí</b></p>
-        <p><img src="semka/public/Pictures/namestie1945.jpg" alt="namestie1945.jpg, 108kB" title="1938 - Námestie P.O.H."></p>
-        <p><b>1945 - Námestie P.O.H.</b></p>
-        <p><img src="semka/public/Pictures/mosty1946.jpg" alt="mosty1946.jpg, 85kB" title="1946 - mosty cez rieku Orava"></p>
-        <p><b>1946 - mosty cez rieku Orava</b></p>
-        <p><img src="semka/public/Pictures/povoden1948.jpg" alt="povoden1948.jpg, 70kB" title="1948 - povodeň"></p>
-        <p><b>1948 - povodeň</b></p>
-        <p><img src="semka/public/Pictures/mesto1949.jpg" alt="mesto1949.jpg, 59kB" title="1949 - mesto"></p>
-        <p><b>1949 - mesto</b></p>
-        <p><img src="semka/public/Pictures/mesto1973.jpg" alt="mesto1973.jpg, 219kB" title="1973 - mesto"></p>
-        <p><b>1973 - mesto</b></p>
-        <p><img src="semka/public/Pictures/jarmok1982.jpg" alt="jarmok1982.jpg, 188kB" title="1982 - jarmok"></p>
-        <p><b>1982 - jarmok</b></p>
-    </div>
-</div>
-<div class="prava">
     <div class="text">
         <p>Za najstaršie sa považuje osídlenie ľudom lužickej kultúry v strednej a mladšej bronzovej dobe z 9. – 7.
             storočia pred Kr. Hmotná kultúra halštatského ľudu oravského typu zo 7. – 4.stor. pred Kr. je v Dolnom
@@ -121,5 +101,34 @@
             Florinov dom, Oravská galéria v bývalom župnom dome, celoslovenská súťaž v prednese poézie a prózy známa ako
             Hviezdoslavov Kubín, medzinárodný hudobný festival Čírenie talentov a festival Bohúňova paleta, v športe
             udeľovanie cien Fair-play MUDr. Ivana Chodáka.</p>
+        <div class="fotogaleria">
+            <div class="foto">
+                <img src="semka/public/Pictures/armada1940.jpg" alt="armada1940.jpg, 68kB"
+                     title="1940 - armáda na námestí">
+                <label class="popis"><b>1940 - armáda na námestí</b></label>
+            </div>
+            <div class="foto">
+                <img src="semka/public/Pictures/namestie1945.jpg" alt="namestie1945.jpg, 108kB"
+                     title="1938 - Námestie P.O.H.">
+                <label class="popis"><b>1945 - Námestie P.O.H.</b></label>
+            </div>
+            <div class="foto">
+                <img src="semka/public/Pictures/mosty1946.jpg" alt="mosty1946.jpg, 85kB"
+                     title="1946 - mosty cez rieku Orava">
+                <label class="popis"><b>1946 - mosty cez rieku Orava</b></label>
+            </div>
+            <div class="foto">
+                <img src="semka/public/Pictures/mesto1949.jpg" alt="mesto1949.jpg, 59kB" title="1949 - mesto">
+                <label class="popis"><b>1949 - mesto</b></label>
+            </div>
+            <div class="foto">
+                <img src="semka/public/Pictures/mesto1973.jpg" alt="mesto1973.jpg, 219kB" title="1973 - mesto">
+                <label class="popis"><b>1973 - mesto</b></label>
+            </div>
+            <div class="foto">
+                <img src="semka/public/Pictures/jarmok1982.jpg" alt="jarmok1982.jpg, 188kB" title="1982 - jarmok">
+                <label class="popis"><b>1982 - jarmok</b></label>
+            </div>
+        </div>
     </div>
 </div>
