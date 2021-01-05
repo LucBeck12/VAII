@@ -1,8 +1,7 @@
 <?php /** @var Array $data */ ?>
-
-<div class="galeria inzercia">
-    <div id="h2index">
-        <h2>Mestské fórum</h2>
+<div class="zaklad modrePozadie">
+    <div class="nadpis">
+        <h1>MESTSKÉ FÓRUM</h1>
     </div>
     <table class="table table-striped table-light" id="table">
         <thead>

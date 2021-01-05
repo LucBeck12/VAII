@@ -24,6 +24,18 @@ body {
     height: auto;
 }
 
+.form-control {
+    margin-bottom: 2vh;
+}
+
+.table .table-striped {
+    color: white !important;
+}
+
+.hidden {
+    display: none;
+}
+
 .lava {
     position: absolute;
     height: 100%;
@@ -33,6 +45,12 @@ body {
 
 .modrePozadie {
     background-color: #c7cbee;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: -1.5px -1.5px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .hlavnyNadpis {
@@ -75,6 +93,7 @@ body {
 
 .nadpis {
     font-size: 8px;
+    margin-bottom: 2vh;
 }
 
 .text > p {
@@ -109,7 +128,7 @@ body {
 
 .foto2 {
     flex: 33.33%;
-    max-width: 30%;
+    max-width: 33%;
     min-width: 20%;
 }
 
@@ -117,12 +136,22 @@ body {
     height: fit-content;
     margin: 3vw;
     margin-top: 4vh;
-    max-width: 25%;/*
+    max-width: 26%;/*
     width: 100%;
     flex: 30%;
     max-width: 25%;
     min-width: 20%;
     padding: 0 3px;*/
+}
+
+.kategoria {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.eur {
+    font-size: larger;
+    margin-right: 0.5vw;
 }
 
 .chyby {
@@ -139,6 +168,68 @@ body {
     color: white;
 }
 
+.poslednaBunka {
+    text-align: end;
+}
+
+#textPrispevku {
+    font-size: 20px;
+}
+
+#zmazatPrispevok {
+    font-size: 0.8rem;
+    display: inline;
+}
+
+.odpovedeNadpis {
+    padding: 0;
+}
+
+.cardComments {
+    width: 85vw;
+    padding: 2vw;
+}
+
+#odpoved {
+    width: 85vw;
+}
+
+#zmazatOdpoved {
+    margin-top: 1vh;
+    font-size: 0.8rem;
+}
+
+.comment-footer {
+    padding-bottom: 3vh;
+}
+
+.chybyPrispevok {
+    margin-bottom: 2vh;
+}
+
+
+
+.form-signin {
+    width: 50vw;
+}
+
+.formularLogin {
+    width: 50vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+}
+
+#loginIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -149,7 +240,9 @@ body {
 
 
 
-.formular {
+
+
+/*.formular {
     width: 75vw;
     margin-left: 12.5vw;
     margin-top: -2vh;
@@ -162,19 +255,13 @@ body {
     display: flex;
 }
 
-/*.inzercia {
+.inzercia {
     position: absolute;
     width: 92vw;
     margin-top: 4vh;
     margin-left: 4vw;
     justify-content: left;
-}*/
-
-
-
-
-
-
+}
 
 .marginR5 {
     margin-right: 5vw;
@@ -193,10 +280,6 @@ body {
     width: 45%;
 }
 
-.table .table-striped {
-    color: white !important;
-}
-
 .prava {
     position: absolute;
     height: auto;
@@ -207,20 +290,14 @@ body {
     padding: 2vw;
 }
 
-h1 {
-    /*font-size: 4vmax;*/
-    text-align: center;
-    text-shadow: -1.5px -1.5px;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
 
-/*.nadpis {
+.nadpis {
     margin-top: 8vh;
 }
 
 .nadpis > h1 {
     font-size: calc(10px + 2vmax);
-}*/
+}
 
 .fotky {
     background-color: #c7cbee;
@@ -253,45 +330,13 @@ h1 {
     margin-right: 2vw;
     justify-content: center;
     background-color: #c7cbee;
-}
+}*/
 
-.kategoria {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-#eur {
-    font-size: larger;
-    margin-right: 0.5vw;
-}
-
-.form-signin {
-    width: 50vw;
-}
-
-.formularLogin {
-    width: 50vw;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 1vh;
-    padding-bottom: 5vh;
-}
-
-#h2pridat {
+/*#h2pridat {
     margin-bottom: 2vh;
     margin-left: 1vw;
     margin-top: 7vh;
     background: #c7cbee;
-}
-
-#loginIcon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #h2index {
@@ -301,39 +346,13 @@ h1 {
     text-align: center;
 }
 
-.cardComments {
-    width: 71vw;
-    padding: 2vw;
-}
-
-.comment-footer {
-    padding-bottom: 3vh;
-}
-
-#comment {
-    width: 71vw;
-}
-
-.form-control {
-    margin-bottom: 2vh;
-}
-
-.hidden {
-    display: none;
-}
-
 .h2, h2 {
     padding-bottom: 2vh;
-}
+}*/
 
-#zmazatPrispevok {
-    font-size: 0.7rem;
-    margin: 0;
-}
-
-td {
+/*.td {
     vertical-align: middle !important;
-}
+}*/
 
 @media screen and (max-width: 1200px) {
     .uvod {
@@ -353,8 +372,8 @@ td {
         max-width: 50%;
     }
 
-    .foto2 {
-        max-width: 40%;
+    .cardInzerat {
+        max-width: 43%;
     }
     /*h1 {
         font-size: 5vmax;
@@ -390,11 +409,7 @@ td {
 
     .foto {
         flex: 60%;
-        max-width: 80%;
-    }
-
-    .foto2 {
-        max-width: 70%;
+        max-width: 100%;
     }
 
     .cardInzerat {

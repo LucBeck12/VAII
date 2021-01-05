@@ -1,9 +1,11 @@
 class Prispevky {
     constructor() {
+
         setInterval(() => {
             this.getPrispevky("table", "vsetky");
             this.getPrispevky("table2", "moje");
             this.getPrispevky("table1", "pouzivatela");
+            this.getOdpovede();
         }, 2000);
         this.getPrispevky(null, "profil");
         this.getPrispevky("table", "vsetky");
@@ -12,26 +14,33 @@ class Prispevky {
 
         var button = document.getElementById("odoslatPrispevok");
         button.addEventListener("click", () => {
-            this.sendPrispevok();
+            var validacia = this.validuj();
+            if (validacia) {
+                document.getElementById("chybyInput").value = "";
+                document.getElementById("odoslatPrispevok").type = "submit";
+                this.sendPrispevok();
+                document.getElementById("chyby").innerHTML = "";
+            }
+            ;
         });
 
-        var button2 = document.getElementById("odoslatComment");
+        var button2 = document.getElementById("odoslatOdpoved");
         button2.addEventListener("click", () => {
-            this.sendKomentar();
+            this.sendOdpoved();
         });
     }
 
-    sendKomentar() {
-        fetch("?c=forum&a=pridajKomentar",
+    sendOdpoved() {
+        fetch("?c=forum&a=prispevok",
             {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: "text=" + document.getElementById("komentar").value
+                body: "odpoved=" + document.getElementById("odpoved").value
             })
             .then(() => {
-                document.getElementById("komentar").value = "";
+                document.getElementById("odpoved").value = "";
             });
     }
 
@@ -95,20 +104,24 @@ class Prispevky {
                             this.link(item.name, nazovCell, item.text, item.id);
                         }
                     }
-                    this.getKomentare();
+                    this.getOdpovede();
                 });
                 if (ktore == "pouzivatela")
-                    document.getElementById("h2pridat profil").innerText = "Príspevky používateľa " + sessionStorage.getItem("login");
+                    document.getElementById("nadpisProfil").innerText = "PRÍSPEVKY POUŽÍVATEĽA " + sessionStorage.getItem("login");
                 else if (ktore == "profil") {
-                    document.getElementById("nazovPrispevku").innerHTML = sessionStorage.getItem("nazov");
+                    document.getElementById("nadpisPrispevku").innerHTML = sessionStorage.getItem("nazov");
                     document.getElementById("textPrispevku").innerHTML = sessionStorage.getItem("text");
                     document.getElementById("idPrispevku").value = sessionStorage.getItem("id");
                 }
             });
     }
 
-    getKomentare() {
-        fetch("?c=forum&a=getallkomentare")
+    getOdpovede() {
+        /* if (localStorage.getItem('scroll') !== null)
+             window.scrollTo(0, sessionStorage.getItem('scroll'));
+     sessionStorage.setItem('scroll', window.scrollY);*/
+
+        fetch("?c=forum&a=getallodpovede")
             .then((response) => {
                 return response.json();
             })
@@ -142,6 +155,7 @@ class Prispevky {
                     }
                 });
             });
+
     }
 
     link(nazov, bunka, text, id) {
@@ -184,8 +198,10 @@ class Prispevky {
     }
 
     buttons(user, row, where, id, cell, deleteWhat) {
-        if (deleteWhat == 0)
+        if (deleteWhat == 0) {
             var buttonCell = row.insertCell(cell);
+            buttonCell.className = "poslednaBunka";
+        }
         if (document.getElementById("loggedUser").innerText == user) {
             var button = document.createElement('delete');
             button.type = "button";
@@ -193,13 +209,13 @@ class Prispevky {
             if (deleteWhat == 0)
                 button.id = "zmazatPrispevok";
             else
-                button.id = "zmazatKomentar";
+                button.id = "zmazatOdpoved";
             button.innerText = "Zmazať"
             button.onclick = () => {
                 if (deleteWhat == 0)
                     location.href = "??c=forum&a=zmaz&id=" + id;
                 else
-                    location.href = "??c=forum&a=zmazKomentar&id=" + id;
+                    location.href = "??c=forum&a=zmazOdpoved&id=" + id;
             };
             if (deleteWhat == 0)
                 buttonCell.appendChild(button);
@@ -207,20 +223,47 @@ class Prispevky {
                 where.appendChild(button);
         }
     }
+
+    validuj() {
+        if (document.getElementById("nazov").value.length < 5 ||
+            document.getElementById("nazov").value.length > 50 ||
+            document.getElementById("text").value.length < 10) {
+
+            document.getElementById("chyby").innerHTML = "";
+            if (document.getElementById("nazov").value.length < 5) {
+                document.getElementById("chyby").innerHTML += "Názov príspevku je príliš krátky. Minimálny počet znakov 5." + "<br />";
+                document.getElementById("chybyInput").value = "1";
+            }
+            if (document.getElementById("nazov").value.length > 50) {
+                document.getElementById("chyby").innerHTML += "Názov príspevku je príliš dlhý. Maximálny počet znakov 50." + "<br />";
+                document.getElementById("chybyInput").value = "1";
+            }
+            if (document.getElementById("text").value.length < 10) {
+                document.getElementById("chyby").innerHTML += "Text príspevku je príliš dlhý. Maximálny počet znakov 10." + "<br />";
+                document.getElementById("chybyInput").value = "1";
+            }
+            return false;
+        }
+        return true;
+        /*if(document.getElementById("nazov").value.length > 5 &&
+            document.getElementById("nazov").value.length < 50 &&
+            document.getElementById("text").value.length > 10) {
+            document.getElementById("chyby").innerHTML = "";
+            document.getElementById("chybyInput").innerText = "";
+        }*/
+    }
 }
 
-var
-    prispevky;
-window
-    .addEventListener(
-        'load'
-        ,
+var prispevky;
+window.addEventListener('load', function (event) {
+    prispevky = new Prispevky();
+});
 
-        function (event) {
-            prispevky = new Prispevky();
-        }
-    )
-;
+/*window.addEventListener('scroll', function () {
+    sessionStorage.setItem('scroll', window.scrollY);
+});
+
+*/
 
 /*getMojePrispevky() {
     fetch("?c=forum&a=getallprispevky")

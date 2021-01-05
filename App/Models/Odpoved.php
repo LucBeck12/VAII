@@ -7,7 +7,7 @@ use App\Core\Model;
 use JsonSerializable;
 use stdClass;
 
-class Komentar extends Model implements JsonSerializable
+class Odpoved extends Model implements JsonSerializable
 {
     protected $id;
     protected $user;
@@ -92,7 +92,7 @@ class Komentar extends Model implements JsonSerializable
 
     static public function setTableName()
     {
-        return "komentar";
+        return "odpoved";
     }
 
     public function jsonSerialize()

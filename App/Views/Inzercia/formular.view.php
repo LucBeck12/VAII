@@ -72,7 +72,7 @@
             <input type="text" class="form-control" placeholder="Zadajte cenu" name="cena"
                    value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getCena() : "") ?>">
         </div>
-        <label id="eur"> € </label>
+        <label class="eur"> € </label>
         <div class="col">
             <input type="text" class="form-control" placeholder="Zadajte telefónne číslo" name="telefonneCislo"
                    value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getTelefonneCislo() : "") ?>">
@@ -81,25 +81,25 @@
             <input type="email" class="form-control" placeholder="Zadajte email" name="email"
                    value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getEmail() : "") ?>">
         </div>
-        <div class="container chyby">
-            <?php if (isset($data['chyby'][2])) {
-                foreach ($data['chyby'][2] as $err) { ?>
-                    <div><?= $err ?></div>
-                <?php }
-            } ?>
+    </div>
+    <div class="chyby">
+        <?php if (isset($data['chyby'][2])) {
+            foreach ($data['chyby'][2] as $err) { ?>
+                <div><?= $err ?></div>
+            <?php }
+        } ?>
 
-            <?php if (isset($data['chyby'][3])) {
-                foreach ($data['chyby'][3] as $err) { ?>
-                    <div><?= $err ?></div>
-                <?php }
-            } ?>
+        <?php if (isset($data['chyby'][3])) {
+            foreach ($data['chyby'][3] as $err) { ?>
+                <div><?= $err ?></div>
+            <?php }
+        } ?>
 
-            <?php if (isset($data['chyby'][4])) {
-                foreach ($data['chyby'][4] as $err) { ?>
-                    <div><?= $err ?></div>
-                <?php }
-            } ?>
-        </div>
+        <?php if (isset($data['chyby'][4])) {
+            foreach ($data['chyby'][4] as $err) { ?>
+                <div><?= $err ?></div>
+            <?php }
+        } ?>
     </div>
     <input class="btn btn-primary buttonForm" type="submit" name="submit" value="Odoslať">
     <a href="?c=inzercia" id="cancel" name="cancel" class="btn btn-default buttonForm">Zrušiť</a>

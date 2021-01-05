@@ -1,44 +1,49 @@
-<div class="container formular nadpisInz">
-    <h2 id="nazovPrispevku">Príspevok </h2>
-</div>
-<div class="container prava formular">
-    <p id="textPrispevku">l</p>
+<div class="zaklad modrePozadie">
+    <div class="nadpis">
+        <h1 id="nadpisPrispevku"></h1>
+    </div>
+    <div>
+        <div class="text">
+            <p id="textPrispevku"></p>
+        </div>
 
-    <div class="row d-flex mt-100 mb-100">
-        <div class="col-lg-6">
-            <form method="post">
-                <div class="form-group">
-                    <textarea name="komentar" id="komentar" class="form-control" rows="2" placeholder="Zadajte odpoveď"></textarea>
-                    <input class="btn btn-primary" type="submit" id="odoslatComment" name="submit" value="Odoslať">
-                    <input class="hidden" id="idPrispevku" name="idPrispevku"></input>
-                </div>
-            </form>
+        <div class="row d-flex mt-100 mb-100">
+            <div class="col-lg-6">
+                <form method="post">
+                    <div class="form-group">
+                        <textarea name="odpoved" id="odpoved" class="form-control" rows="1"
+                                  placeholder="Zadajte odpoveď"></textarea>
+                        <input class="btn btn-primary" type="submit" id="odoslatOdpoved" name="submit" value="Odoslať">
+                        <input class="hidden" id="idPrispevku" name="idPrispevku"></input>
+                    </div>
+                </form>
 
-            <div class="card cardComments">
-                <div class="card-body text-center">
-                    <h4 class="card-title">Odpovede</h4>
+                <div class="card cardComments">
+                    <div class="card-body text-center odpovedeNadpis">
+                        <h4 class="card-title">Odpovede</h4>
+                    </div>
+                    <div class="comment-widgets">
+                        <!-- Comment Row -->
+                        <!--<div class="d-flex flex-row comment-row m-t-0">
+                            <div class="comment-text w-100">
+                                <h6 class="font-medium">James Thomas</h6> <span class="m-b-15 d-block">This is awesome website. I would love to comeback again. </span>
+                                <div class="comment-footer"> <span class="text-muted float-right">April 14, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
+                            </div>
+                        </div> <!-- Comment Row -->
+                        <!--<div class="d-flex flex-row comment-row">
+                            <div class="comment-text active w-100">
+                                <h6 class="font-medium">Michael Hussey</h6> <span class="m-b-15 d-block">Thanks bbbootstrap.com for providing such useful snippets. </span>
+                                <div class="comment-footer"> <span class="text-muted float-right">May 10, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
+                            </div>
+                        </div> <!-- Comment Row -->
+                        <!--<div class="d-flex flex-row comment-row">
+                            <div class="comment-text w-100">
+                                <h6 class="font-medium">Johnathan Doeting</h6> <span class="m-b-15 d-block">Great industry leaders are not the real heroes of stock market. </span>
+                                <div class="comment-footer"> <span class="text-muted float-right">August 1, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
+                            </div>
+                        </div>-->
+                    </div> <!-- Card -->
                 </div>
-                <div class="comment-widgets">
-                    <!-- Comment Row -->
-                    <!--<div class="d-flex flex-row comment-row m-t-0">
-                        <div class="comment-text w-100">
-                            <h6 class="font-medium">James Thomas</h6> <span class="m-b-15 d-block">This is awesome website. I would love to comeback again. </span>
-                            <div class="comment-footer"> <span class="text-muted float-right">April 14, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
-                        </div>
-                    </div> <!-- Comment Row -->
-                    <!--<div class="d-flex flex-row comment-row">
-                        <div class="comment-text active w-100">
-                            <h6 class="font-medium">Michael Hussey</h6> <span class="m-b-15 d-block">Thanks bbbootstrap.com for providing such useful snippets. </span>
-                            <div class="comment-footer"> <span class="text-muted float-right">May 10, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
-                        </div>
-                    </div> <!-- Comment Row -->
-                    <!--<div class="d-flex flex-row comment-row">
-                        <div class="comment-text w-100">
-                            <h6 class="font-medium">Johnathan Doeting</h6> <span class="m-b-15 d-block">Great industry leaders are not the real heroes of stock market. </span>
-                            <div class="comment-footer"> <span class="text-muted float-right">August 1, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
-                        </div>
-                    </div>-->
-                </div> <!-- Card -->
             </div>
         </div>
     </div>

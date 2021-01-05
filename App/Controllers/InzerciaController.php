@@ -130,14 +130,14 @@ class InzerciaController extends AControllerBase
         if (!is_numeric($telefonneCislo) && strlen($telefonneCislo) != 0) {
             $chybyTelCisla[] = "Zlý formát telefónneho čísla. Povolené znaky 0-9.";
         }
+        if (substr($telefonneCislo, 0, 2) != "09" && strlen($telefonneCislo) != 0) {
+            $chybyTelCisla[] = "Zlý formát telefónneho čísla. Musí začínať číslicami 09.";
+        }
         if (strlen($telefonneCislo) < 10 && strlen($telefonneCislo) != 0) {
             $chybyTelCisla[] = "Zadané číslo je príliš krátke. Telefónne číslo neexistuje.";
         }
         if (strlen($telefonneCislo) > 10 && strlen($telefonneCislo) != 0) {
             $chybyTelCisla[] = "Zadané číslo je príliš dlhé. Telefónne číslo neexistuje.";
-        }
-        if (substr($telefonneCislo, 0, 2) != "09" && strlen($telefonneCislo) != 0) {
-            $chybyTelCisla[] = "Zlý formát telefónneho čísla. Musí začínať číslicami 09.";
         }
         if (strlen($email) < 8 && strlen($email) != 0) {
             $chybyEmailu[] = "Zadaný email je príliš krátky. Emailová adresa neexistuje.";

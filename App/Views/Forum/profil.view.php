@@ -1,5 +1,7 @@
-<div class="galeria inzercia">
-    <h2 id="h2pridat profil"></h2>
+<div class="zaklad modrePozadie">
+    <div class="nadpis">
+        <h1 id="nadpisProfil"></h1>
+    </div>
     <table class="table table-striped table-light" id="table1">
         <thead>
         <tr>

@@ -1,6 +1,8 @@
 <?php /** @var \App\Models\Prispevok $data */ ?>
-<div class="galeria inzercia">
-    <h2 id="h2pridat">Moje príspevky </h2>
+<div class="zaklad modrePozadie">
+    <div class="nadpis">
+        <h1>MOJE PRÍSPEVKY</h1>
+    </div>
     <table class="table table-striped table-light" id="table2">
         <thead>
         <tr>

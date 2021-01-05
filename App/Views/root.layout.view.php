@@ -62,8 +62,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="?c=forum">Pozri fórum</a>
                     <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?>
-                        <a class="dropdown-item" href="?c=forum&a=pridat">Pridaj príspevok</a>
                         <a class="dropdown-item" href="?c=forum&a=mojprofil">Moje príspevky</a>
+                        <a class="dropdown-item" href="?c=forum&a=pridat">Pridaj príspevok</a>
                     <?php } ?>
                 </div>
             </li>
