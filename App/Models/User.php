@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Models;
 
 use App\Core\Model;
@@ -24,7 +23,7 @@ class User extends Model
 
     static public function setTableName()
     {
-        return "users";
+        return "user";
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php /** @var Array $data */ ?>
+<?php ?>
 <div class="zaklad modrePozadie">
     <div class="nadpis">
         <h1>MESTSKÉ FÓRUM</h1>

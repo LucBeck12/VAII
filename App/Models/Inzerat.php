@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use App\Core\Model;
@@ -17,9 +18,9 @@ class Inzerat extends Model
     /**
      * Inzerat constructor.
      * @param $nadpis
+     * @param $text
      * @param $typ
      * @param $kategoria
-     * @param $text
      * @param $cena
      * @param $telefonneCislo
      * @param $email

@@ -1,3 +1,4 @@
+<?php ?>
 <div class="zaklad modrePozadie">
     <div class="nadpis">
         <h1 id="nadpisProfil"></h1>

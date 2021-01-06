@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Models;
 
 use App\Core\Model;
@@ -21,36 +20,14 @@ class Odpoved extends Model implements JsonSerializable
         $this->text = $text;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getPrispevok()
+    static public function setDbColumns()
     {
-        return $this->prispevok;
+        return ["id", "user", "prispevok", "text"];
     }
 
-    /**
-     * @param mixed $prispevok
-     */
-    public function setPrispevok($prispevok): void
+    static public function setTableName()
     {
-        $this->inzerat = $prispevok;
-    }
-
-    /**
-     * @return mixed|string
-     */
-    public function getText()
-    {
-        return $this->text;
-    }
-
-    /**
-     * @param mixed|string $image
-     */
-    public function setText($text): void
-    {
-        $this->text = $text;
+        return "odpoved";
     }
 
     /**
@@ -85,14 +62,36 @@ class Odpoved extends Model implements JsonSerializable
         $this->user = $user;
     }
 
-    static public function setDbColumns()
+    /**
+     * @return mixed
+     */
+    public function getPrispevok()
     {
-        return ["id", "user", "prispevok", "text"];
+        return $this->prispevok;
     }
 
-    static public function setTableName()
+    /**
+     * @param mixed $prispevok
+     */
+    public function setPrispevok($prispevok): void
     {
-        return "odpoved";
+        $this->inzerat = $prispevok;
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getText()
+    {
+        return $this->text;
+    }
+
+    /**
+     * @param mixed|string $image
+     */
+    public function setText($text): void
+    {
+        $this->text = $text;
     }
 
     public function jsonSerialize()

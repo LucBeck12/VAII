@@ -7,26 +7,13 @@ use App\Models\Inzerat;
 
 class InzerciaController extends AControllerBase
 {
-
     public function index()
     {
         return $this->html(Inzerat::getAll());
-        //return Inzerat::getAll();
     }
 
     public function pridaj()
     {
-        //if (!isset($_POST['nadpis']) || !isset($_POST['text']) || !isset($_POST['typ']) || !isset($_POST['kategoria'])) return null;
-        /* $inzerat = new Inzerat($_POST['nadpis'], $_POST['text'], $_POST['typ'], $_POST['kategoria'], $_POST['cena'], $_POST['telefonneCislo'], $_POST['email']);
-         $validacia = $this->validuj($_POST['nadpis'], $_POST['text'], $_POST['cena'], $_POST['telefonneCislo'], $_POST['email']);
-         if ($validacia == null) {
-             $inzerat->save();
-             header("Location: http://localhost/semka/?c=inzercia");
-         }
-         $data = [
-             'inzerat' => $inzerat,
-             'chyby' => $validacia,
-         ];*/
         $formData = $this->app->getRequest()->getPost();
         $data = [];
         if (isset($formData['submit'])) {
@@ -51,36 +38,11 @@ class InzerciaController extends AControllerBase
             $inzerat = Inzerat::getOne($_GET['id']);
             $inzerat->delete();
         }
-        //header("Location: http://localhost/semka/?c=inzercia");
         return $this->redirect('?c=inzercia');
     }
 
     public function uprav()
     {
-        /*$validacia = null;
-        if (isset($_POST['id'])) {
-            $validacia = $this->validuj($_POST['nadpis'], $_POST['text'], $_POST['cena'], $_POST['telefonneCislo'], $_POST['email']);
-            $inzerat = Inzerat::getOne($_POST['id']);
-            $inzerat->setNadpis($_POST['nadpis']);
-            $inzerat->setText($_POST['text']);
-            $inzerat->setTyp($_POST['typ']);
-            $inzerat->setKategoria($_POST['kategoria']);
-            $inzerat->setCena($_POST['cena']);
-            $inzerat->setTelefonneCislo($_POST['telefonneCislo']);
-            $inzerat->setEmail($_POST['email']);
-
-            if ($validacia == null) {
-                $inzerat->save();
-                header("Location: http://localhost/semka/?c=inzercia");
-            }
-        } else {
-            $inzerat = Inzerat::getOne($_GET['id']);
-        }
-        return [
-            'inzerat' => $inzerat,
-            'chyby' => $validacia,
-        ];*/
-
         $data = null;
         $validacia = null;
         if (isset($_POST['id'])) {
@@ -106,8 +68,6 @@ class InzerciaController extends AControllerBase
             'chyby' => $validacia,
         ];
         return $this->html($data, 'uprav');
-
-
     }
 
     public function validuj($nadpis, $text, $cena, $telefonneCislo, $email)

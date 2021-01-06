@@ -82,5 +82,4 @@ class ForumController extends AControllerBase
         return $this->json(Odpoved::getAll());
     }
 }
-
 ?>

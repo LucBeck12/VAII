@@ -1,12 +1,10 @@
 <?php /** @var Array $data */ ?>
-
 <div class="zaklad modrePozadie">
     <div class="nadpis">
         <h1>MESTSKÁ INZERCIA</h1>
     </div>
     <div class="fotogaleria">
         <?php /** @var \App\Models\Inzerat $inzerat */
-
         foreach ($data as $inzerat) { ?>
             <div class="cardInzerat card foto foto2" style="width: 18rem;">
                 <div class="card-body">

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Models;
 
 use App\Core\Model;
@@ -21,36 +20,14 @@ class Prispevok extends Model implements JsonSerializable
         $this->text = $text;
     }
 
-    /**
-     * @return mixed|string
-     */
-    public function getNazov()
+    static public function setDbColumns()
     {
-        return $this->nazov;
+        return ["id", "user_login", "nazov", "text"];
     }
 
-    /**
-     * @param mixed|string $popis
-     */
-    public function setNazov($nazov): void
+    static public function setTableName()
     {
-        $this->nazov = $nazov;
-    }
-
-    /**
-     * @return mixed|string
-     */
-    public function getText()
-    {
-        return $this->text;
-    }
-
-    /**
-     * @param mixed|string $image
-     */
-    public function setText($text): void
-    {
-        $this->text = $text;
+        return "prispevok";
     }
 
     /**
@@ -85,14 +62,36 @@ class Prispevok extends Model implements JsonSerializable
         $this->user_login = $user_login;
     }
 
-    static public function setDbColumns()
+    /**
+     * @return mixed|string
+     */
+    public function getNazov()
     {
-        return ["id", "user_login", "nazov", "text"];
+        return $this->nazov;
     }
 
-    static public function setTableName()
+    /**
+     * @param mixed|string $popis
+     */
+    public function setNazov($nazov): void
     {
-        return "prispevok";
+        $this->nazov = $nazov;
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getText()
+    {
+        return $this->text;
+    }
+
+    /**
+     * @param mixed|string $image
+     */
+    public function setText($text): void
+    {
+        $this->text = $text;
     }
 
     public function jsonSerialize()

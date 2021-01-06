@@ -1,6 +1,5 @@
-class Prispevky {
+class Js {
     constructor() {
-
         setInterval(() => {
             this.getPrispevky("table", "vsetky");
             this.getPrispevky("table2", "moje");
@@ -14,14 +13,12 @@ class Prispevky {
 
         var button = document.getElementById("odoslatPrispevok");
         button.addEventListener("click", () => {
-            var validacia = this.validuj();
-            if (validacia) {
+            if (this.validuj()) {
                 document.getElementById("chybyInput").value = "";
                 document.getElementById("odoslatPrispevok").type = "submit";
                 this.sendPrispevok();
                 document.getElementById("chyby").innerHTML = "";
             }
-            ;
         });
 
         var button2 = document.getElementById("odoslatOdpoved");
@@ -51,8 +48,7 @@ class Prispevky {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: "nazov=" + document.getElementById("nazov").value + "text="
-                    + document.getElementById("text").value
+                body: "nazov=" + document.getElementById("nazov").value + "text=" + document.getElementById("text").value
             })
             .then(() => {
                 document.getElementById("nazov").value = "";
@@ -66,42 +62,44 @@ class Prispevky {
                 return response.json();
             })
             .then((data) => {
-                if (tabulka != null) {
+                if (tabulka !== null) {
                     var table = document.getElementById(tabulka).getElementsByTagName("tbody")[0];
                     table.innerText = "";
                 }
+                var row, idCell, loginCell, nazovCell;
                 data.forEach((item) => {
                     if (ktore == "vsetky") {
-                        var row = table.insertRow();
-                        var idCell = row.insertCell(0);
-                        var loginCell = row.insertCell(1);
-                        var nazovCell = row.insertCell(2);
+                        row = table.insertRow();
+                        idCell = row.insertCell(0);
+                        loginCell = row.insertCell(1);
+                        nazovCell = row.insertCell(2);
 
                         idCell.innerHTML = item.id;
 
                         this.linkLogin(item.user, loginCell);
-                        this.link(item.name, nazovCell, item.text, idCell.innerHTML);
-                        this.buttons(item.user, row, null, item.id, 3, 0);
+                        this.linkNazov(nazovCell, item.name, item.text, item.id);
+                        this.buttons("prispevok", item.user, item.id, null, row, 3);
 
                     } else if (ktore == "moje") {
                         if (document.getElementById("loggedUser").innerText == item.user) {
                             row = table.insertRow();
-                            var idCell = row.insertCell(0);
-                            var nazovCell = row.insertCell(1);
+                            idCell = row.insertCell(0);
+                            nazovCell = row.insertCell(1);
 
                             idCell.innerHTML = item.id;
-                            this.link(item.name, nazovCell, item.text, item.id);
-                            this.buttons(item.user, row, null, item.id, 2, 0)
+
+                            this.linkNazov(nazovCell, item.name, item.text, item.id);
+                            this.buttons("prispevok", item.user, item.id, null, row, null, 2);
                         }
                     } else if (ktore == "pouzivatela") {
                         if (sessionStorage.getItem("login") == item.user) {
-
-                            var row = table.insertRow();
-                            var idCell = row.insertCell(0);
-                            var nazovCell = row.insertCell(1);
+                            row = table.insertRow();
+                            idCell = row.insertCell(0);
+                            nazovCell = row.insertCell(1);
 
                             idCell.innerHTML = item.id;
-                            this.link(item.name, nazovCell, item.text, item.id);
+
+                            this.linkNazov(nazovCell, item.name, item.text, item.id);
                         }
                     }
                     this.getOdpovede();
@@ -120,7 +118,6 @@ class Prispevky {
         /* if (localStorage.getItem('scroll') !== null)
              window.scrollTo(0, sessionStorage.getItem('scroll'));
      sessionStorage.setItem('scroll', window.scrollY);*/
-
         fetch("?c=forum&a=getallodpovede")
             .then((response) => {
                 return response.json();
@@ -138,14 +135,17 @@ class Prispevky {
                         div2.className = "comment-text w-100";
                         var h6 = document.createElement("h6");
                         h6.className = "font-medium";
+
                         this.linkLogin(item.user, h6);
+
                         var span = document.createElement("span");
                         span.className = "m-b-15 d-block";
                         span.innerHTML = item.text;
 
                         var div3 = document.createElement("div");
                         div3.className = "comment-footer";
-                        this.buttons(item.user, null, div3, item.id, null, 1);
+
+                        this.buttons("odpoved", item.user, item.id, div3, null, null);
 
                         div2.appendChild(h6);
                         div2.appendChild(span);
@@ -158,9 +158,9 @@ class Prispevky {
 
     }
 
-    link(nazov, bunka, text, id) {
+    linkNazov(bunka, nazov, text, id) {
         var linkNazov = document.createElement("a");
-        if (document.getElementById("loggedUser").innerText != "") {
+        if (document.getElementById("loggedUser").innerText !== "") {
             linkNazov.href = "?c=forum&a=prispevok";
         } else {
             linkNazov.href = "?c=login";
@@ -171,7 +171,7 @@ class Prispevky {
         bunka.appendChild(linkNazov);
 
         linkNazov.onclick = () => {
-            sessionStorage.setItem("nazov", linkNazov.id);
+            sessionStorage.setItem("nazov", nazov);
             sessionStorage.setItem("text", text);
             sessionStorage.setItem("id", id);
         };
@@ -181,12 +181,11 @@ class Prispevky {
         var linkLogin = document.createElement("a");
         if (document.getElementById("loggedUser").innerText == user) {
             linkLogin.href = "?c=forum&a=mojprofil";
-        } else if (document.getElementById("loggedUser").innerText != "") {
+        } else if (document.getElementById("loggedUser").innerText !== "") {
             linkLogin.href = "?c=forum&a=profil";
         } else {
             linkLogin.href = "?c=login";
         }
-
         linkLogin.id = user;
         var linkTextLogin = document.createTextNode(user);
         linkLogin.appendChild(linkTextLogin);
@@ -197,30 +196,31 @@ class Prispevky {
         };
     }
 
-    buttons(user, row, where, id, cell, deleteWhat) {
-        if (deleteWhat == 0) {
-            var buttonCell = row.insertCell(cell);
+    buttons(deleteWhat, user, id, appendTo, row, cell) {
+        var buttonCell;
+        if (deleteWhat == "prispevok") {
+            buttonCell = row.insertCell(cell);
             buttonCell.className = "poslednaBunka";
         }
         if (document.getElementById("loggedUser").innerText == user) {
             var button = document.createElement('delete');
             button.type = "button";
             button.className = "btn btn-danger";
-            if (deleteWhat == 0)
+            if (deleteWhat == "prispevok")
                 button.id = "zmazatPrispevok";
             else
                 button.id = "zmazatOdpoved";
-            button.innerText = "Zmazať"
+            button.innerText = "Zmazať";
             button.onclick = () => {
-                if (deleteWhat == 0)
+                if (deleteWhat == "prispevok")
                     location.href = "??c=forum&a=zmaz&id=" + id;
                 else
                     location.href = "??c=forum&a=zmazOdpoved&id=" + id;
             };
-            if (deleteWhat == 0)
+            if (deleteWhat == "prispevok")
                 buttonCell.appendChild(button);
             else
-                where.appendChild(button);
+                appendTo.appendChild(button);
         }
     }
 
@@ -245,18 +245,12 @@ class Prispevky {
             return false;
         }
         return true;
-        /*if(document.getElementById("nazov").value.length > 5 &&
-            document.getElementById("nazov").value.length < 50 &&
-            document.getElementById("text").value.length > 10) {
-            document.getElementById("chyby").innerHTML = "";
-            document.getElementById("chybyInput").innerText = "";
-        }*/
     }
 }
 
-var prispevky;
-window.addEventListener('load', function (event) {
-    prispevky = new Prispevky();
+var js;
+window.addEventListener('load', function () {
+    js = new Js();
 });
 
 /*window.addEventListener('scroll', function () {

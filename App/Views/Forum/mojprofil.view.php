@@ -1,4 +1,4 @@
-<?php /** @var \App\Models\Prispevok $data */ ?>
+<?php ?>
 <div class="zaklad modrePozadie">
     <div class="nadpis">
         <h1>MOJE PRÍSPEVKY</h1>

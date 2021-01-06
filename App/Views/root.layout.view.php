@@ -18,7 +18,7 @@
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://localhost/semka/public/css.css">
-    <script src="http://localhost/semka/public/prispevky.js"></script>
+    <script src="http://localhost/semka/public/js.js"></script>
 </head>
 <body>
 
@@ -84,18 +84,9 @@
         </ul>
     </div>
 </nav>
-<p type="hidden" id="loggedUser"
+<p id="loggedUser"
    class="hidden"><?= (\App\Models\Auth::getInstance()->isLogged()) ? \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() : "" ?>
 </p>
-
-<!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Super úžasná stránka</h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark active" href="?c=home">Domov</a>
-        <a class="p-2 text-dark" href="?c=home&a=contact">Kontakt</a>
-    </nav>
-
-</div>-->
 
 <div class="web-content">
     <?= $contentHTML ?>

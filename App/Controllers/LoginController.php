@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Controllers;
 
 use App\Core\AControllerBase;
@@ -31,59 +30,11 @@ class LoginController extends AControllerBase
         return $this->html($data, 'index');
     }
 
-    /*public function login()
-    {
-        $formData = $this->app->getRequest()->getPost();
-        $prihlaseny = null;
-        if (isset($formData['submit'])) {
-            $logged = $this->app->getAuth()->login($formData['login'], $formData['password']);
-            if ($logged) {
-                return $this->redirect('?c=chat');
-            }
-        }
-        $data = ($logged === false ? ['message' => 'Zlý login alebo heslo!'] : []);
-        return $this->html($data, 'login');
-    }*/
-
     public function logout()
     {
         Auth::getInstance()->logout();
-        //header("Location: ?");
-        //die;
         return $this->redirect('?c=home');
     }
-
-
-    /*function login($login, $heslo)
-    {
-        $najdeny = User::getAll("login = ?", [$login]);
-        $heslo = password_hash($heslo, PASSWORD_DEFAULT);
-
-        if (count($najdeny) == 1) {
-            $najdeny = $najdeny[0];
-            if (password_verify($heslo, $najdeny->getHeslo())) {
-                $_SESSION['user'] = $najdeny;
-                return true;
-            } else {
-                return false;
-            }
-        } else if (count($najdeny) == 0) {
-            $data = [];
-            if (isset($formData['submit'])) {
-                $user = new User($login, $heslo);
-                $validacia = $this->validuj($login, $heslo);
-                if ($validacia == null) {
-                    $user->save();
-                    return $this->redirect('?c=home');
-                }
-                $data = ($validacia != null ? [
-                    'user' => $user,
-                    'chyby' => $validacia,
-                ] : []);
-            }
-            return $this->html($data, 'login');
-        }
-    }*/
 
     public function validuj($login, $heslo)
     {

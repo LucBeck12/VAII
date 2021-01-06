@@ -1,3 +1,4 @@
+<?php ?>
 <div class="zaklad modrePozadie">
     <div class="nadpis">
         <h1>O MESTE</h1>
@@ -92,4 +93,3 @@
         </div>
     </div>
 </div>
-

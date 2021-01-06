@@ -136,12 +136,13 @@ h1 {
     height: fit-content;
     margin: 3vw;
     margin-top: 4vh;
-    max-width: 26%;/*
-    width: 100%;
-    flex: 30%;
-    max-width: 25%;
-    min-width: 20%;
-    padding: 0 3px;*/
+    max-width: 26%;
+    /*
+        width: 100%;
+        flex: 30%;
+        max-width: 25%;
+        min-width: 20%;
+        padding: 0 3px;*/
 }
 
 .kategoria {
@@ -207,40 +208,101 @@ h1 {
     margin-bottom: 2vh;
 }
 
-
-
-.form-signin {
-    width: 50vw;
-}
-
 .formularLogin {
     width: 50vw;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4vh;
+    margin-left: 25vw;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 1vh;
     padding-bottom: 5vh;
 }
 
-#loginIcon {
+.loginIcon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .uvod {
+        width: 45vw;
+    }
 
+    .erbK {
+        width: 22vw;
+    }
 
+    .podnadpis {
+        font-size: 3vmax;
+    }
 
+    .foto {
+        flex: 50%;
+        max-width: 50%;
+    }
 
+    .cardInzerat {
+        max-width: 43%;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+    .uvod {
+        width: 55vw;
+    }
 
+    .erbK {
+        width: 26vw;
+    }
 
+    .podnadpis {
+        font-size: 3vmax;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .uvod {
+        width: 65vw;
+    }
 
+    .erbK {
+        width: 35vw;
+    }
 
+    .foto {
+        flex: 60%;
+        max-width: 100%;
+    }
+
+    .cardInzerat {
+        max-width: 90%;
+    }
+
+    .formularLogin {
+        margin-left: 0;
+    width: 100vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .uvod {
+        width: 75vw;
+    }
+
+    .erbK {
+        width: 46vw;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .uvod {
+        width: 100vw;
+    }
+
+    .erbK {
+        width: 73vw;
+    }
+}
 
 /*.formular {
     width: 75vw;
@@ -353,86 +415,3 @@ h1 {
 /*.td {
     vertical-align: middle !important;
 }*/
-
-@media screen and (max-width: 1200px) {
-    .uvod {
-        width: 45vw;
-    }
-
-    .erbK {
-        width: 22vw;
-    }
-
-    .podnadpis {
-        font-size: 3vmax;
-    }
-
-    .foto {
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .cardInzerat {
-        max-width: 43%;
-    }
-    /*h1 {
-        font-size: 5vmax;
-    }*/
-}
-
-@media screen and (max-width: 1000px) {
-    .uvod {
-        width: 55vw;
-    }
-
-    .erbK {
-        width: 26vw;
-    }
-
-    .podnadpis {
-        font-size: 3vmax;
-    }
-
-    /*h1 {
-        font-size: 6vmax;
-    }*/
-}
-
-@media screen and (max-width: 800px) {
-    .uvod {
-        width: 65vw;
-    }
-
-    .erbK {
-        width: 35vw;
-    }
-
-    .foto {
-        flex: 60%;
-        max-width: 100%;
-    }
-
-    .cardInzerat {
-        max-width: 90%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .uvod {
-        width: 75vw;
-    }
-
-    .erbK {
-        width: 46vw;
-    }
-}
-
-@media screen and (max-width: 200px) {
-    .uvod {
-        width: 100vw;
-    }
-
-    .erbK {
-        width: 73vw;
-    }
-}

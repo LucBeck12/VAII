@@ -1,3 +1,4 @@
+<?php ?>
 <div class="zaklad modrePozadie tien">
     <div class="nadpis">
         <h1>HISTÓRIA MESTA</h1>
