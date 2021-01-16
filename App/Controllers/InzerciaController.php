@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\AControllerBase;
+use App\Models\Auth;
 use App\Models\Inzerat;
 
 class InzerciaController extends AControllerBase
@@ -17,8 +18,9 @@ class InzerciaController extends AControllerBase
         $formData = $this->app->getRequest()->getPost();
         $data = [];
         if (isset($formData['submit'])) {
+            $login = Auth::getInstance()->getLoggedUser()->getLogin();
             $inzerat = new Inzerat($_POST['nadpis'], $_POST['text'], $_POST['typ'], $_POST['kategoria'], $_POST['cena'],
-                $_POST['telefonneCislo'], $_POST['email']);
+                $_POST['telefonneCislo'], $_POST['email'], $login);
             $validacia = $this->validuj($_POST['nadpis'], $_POST['text'], $_POST['cena'], $_POST['telefonneCislo'], $_POST['email']);
             if ($validacia == null) {
                 $inzerat->save();

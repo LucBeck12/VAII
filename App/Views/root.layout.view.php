@@ -51,7 +51,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="?c=inzercia">Pozri inzeraty</a>
-                    <a class="dropdown-item" href="?c=inzercia&a=pridaj">Pridaj inzerat</a>
+                    <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?>
+                        <a class="dropdown-item" href="?c=inzercia&a=pridaj">Pridaj inzerat</a>
+                    <?php } ?>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -75,7 +77,7 @@
                 </li>
             <?php } else { ?>
                 <li class="nav-item active nav-link">
-                    Prihlásený používateľ: <?= \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() ?>
+                    <?= \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() ?>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="?c=login&a=logout">Odhlásiť <span class="sr-only">(current)</span></a>

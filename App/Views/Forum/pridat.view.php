@@ -10,7 +10,7 @@
         </div>
         <div id="chyby" class="chyby chybyPrispevok"></div>
         <input class="btn btn-primary" type="button" name="submit" id="odoslatPrispevok" value="Odoslať">
-        <a href="?c=inzercia" id="cancel" name="cancel" class="btn btn-default">Zrušiť</a>
+        <a href="?c=forum" id="cancel" name="cancel" class="btn btn-default">Zrušiť</a>
         <input class="hidden" id="chybyInput" name="chybyInput">
     </form>
 </div>

@@ -3,6 +3,10 @@
     <div class="nadpis">
         <h1>MESTSKÁ INZERCIA</h1>
     </div>
+    <div class="buttonPridaj">
+        <a <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?> href="?c=inzercia&a=pridaj" <?php } else { ?>
+            href="?c=login" <?php } ?> class="btn btn-primary" type="button">Pridaj inzerát</a>
+    </div>
     <div class="fotogaleria">
         <?php /** @var \App\Models\Inzerat $inzerat */
         foreach ($data as $inzerat) { ?>
@@ -26,10 +30,12 @@
                         <li class="list-group-item"><b>Email: </b><?= $inzerat->getEmail() ?> </li>
                     <?php } ?>
                 </ul>
-                <div class="card-body">
-                    <a class="card-link" href="?c=inzercia&a=uprav&id=<?= $inzerat->getId() ?>">Upraviť</a>
-                    <a class="card-link" href="?c=inzercia&a=zmaz&id=<?= $inzerat->getId() ?>">Zmazať</a>
-                </div>
+                <?php if (\App\Models\Auth::getInstance()->isLogged() && \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() == $inzerat->getUserLogin()) { ?>
+                    <div class="card-body">
+                        <a class="card-link" href="?c=inzercia&a=uprav&id=<?= $inzerat->getId() ?>">Upraviť</a>
+                        <a class="card-link" href="?c=inzercia&a=zmaz&id=<?= $inzerat->getId() ?>">Zmazať</a>
+                    </div>
+                <?php } ?>
             </div>
         <?php } ?>
     </div>

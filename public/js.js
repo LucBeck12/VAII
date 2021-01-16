@@ -89,7 +89,7 @@ class Js {
                             idCell.innerHTML = item.id;
 
                             this.linkNazov(nazovCell, item.name, item.text, item.id);
-                            this.buttons("prispevok", item.user, item.id, null, row, null, 2);
+                            this.buttons("prispevok", item.user, item.id, null, row, 2);
                         }
                     } else if (ktore == "pouzivatela") {
                         if (sessionStorage.getItem("login") == item.user) {
@@ -239,7 +239,7 @@ class Js {
                 document.getElementById("chybyInput").value = "1";
             }
             if (document.getElementById("text").value.length < 10) {
-                document.getElementById("chyby").innerHTML += "Text príspevku je príliš dlhý. Maximálny počet znakov 10." + "<br />";
+                document.getElementById("chyby").innerHTML += "Text príspevku je príliš krátky. Minimálny počet znakov 10." + "<br />";
                 document.getElementById("chybyInput").value = "1";
             }
             return false;

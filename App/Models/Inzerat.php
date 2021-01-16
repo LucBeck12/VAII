@@ -14,6 +14,7 @@ class Inzerat extends Model
     protected $cena;
     protected $telefonneCislo;
     protected $email;
+    protected $user_login;
 
     /**
      * Inzerat constructor.
@@ -25,7 +26,7 @@ class Inzerat extends Model
      * @param $telefonneCislo
      * @param $email
      */
-    public function __construct($nadpis = "", $text = "", $typ = "", $kategoria = "", $cena = "", $telefonneCislo = "", $email = "")
+    public function __construct($nadpis = "", $text = "", $typ = "", $kategoria = "", $cena = "", $telefonneCislo = "", $email = "", $user_login="")
     {
         $this->nadpis = $nadpis;
         $this->text = $text;
@@ -34,11 +35,12 @@ class Inzerat extends Model
         $this->cena = $cena;
         $this->telefonneCislo = $telefonneCislo;
         $this->email = $email;
+        $this->user_login = $user_login;
     }
 
     static public function setDbColumns()
     {
-        return ['id', 'nadpis', 'text', 'typ', 'kategoria', 'cena', 'telefonneCislo', 'email'];
+        return ['id', 'nadpis', 'text', 'typ', 'kategoria', 'cena', 'telefonneCislo', 'email', 'user_login'];
     }
 
     static public function setTableName()
@@ -164,5 +166,21 @@ class Inzerat extends Model
     public function setEmail($email): void
     {
         $this->email = $email;
+    }
+
+    /**
+     * @return mixed|string
+     */
+    public function getUserLogin()
+    {
+        return $this->user_login;
+    }
+
+    /**
+     * @param mixed|string $user_login
+     */
+    public function setUserLogin($user_login): void
+    {
+        $this->user_login = $user_login;
     }
 }

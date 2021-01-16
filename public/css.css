@@ -132,6 +132,12 @@ h1 {
     min-width: 20%;
 }
 
+.buttonPridaj {
+    justify-content: center;
+    display: flex;
+    margin-top: -1vh;
+}
+
 .cardInzerat {
     height: fit-content;
     margin: 3vw;
@@ -167,6 +173,10 @@ h1 {
 #cancel {
     background-color: darkslategray;
     color: white;
+}
+
+#table, #table2, #table1 {
+    margin-top: 2vh;
 }
 
 .poslednaBunka {
