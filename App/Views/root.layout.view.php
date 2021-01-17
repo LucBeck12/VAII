@@ -50,10 +50,12 @@
                     Inzercia
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="?c=inzercia">Pozri inzeraty</a>
                     <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?>
-                        <a class="dropdown-item" href="?c=inzercia&a=pridaj">Pridaj inzerat</a>
+                        <a class="dropdown-item" href="?c=inzercia&a=pridaj">Pridaj inzerát</a>
                     <?php } ?>
+                    <a class="dropdown-item" href="?c=inzercia">Pozri inzeráty</a>
+                    <a class="dropdown-item" href="?c=inzercia&a=kupim">Kúpim</a>
+                    <a class="dropdown-item" href="?c=inzercia&a=predam">Predám</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

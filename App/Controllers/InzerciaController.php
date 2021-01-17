@@ -107,4 +107,12 @@ class InzerciaController extends AControllerBase
         return count($chybyNadpisu) > 0 || count($chybyTextu) > 0 || count($chybyCeny) > 0 || count($chybyTelCisla) > 0
         || count($chybyEmailu) > 0 ? [$chybyNadpisu, $chybyTextu, $chybyCeny, $chybyTelCisla, $chybyEmailu] : null;
     }
+
+    public function kupim() {
+        return $this->html(Inzerat::getAll(" typ LIKE ?", ["Kúpim"]));
+    }
+
+    public function predam() {
+        return $this->html(Inzerat::getAll(" typ LIKE ?", ["Predám"]));
+    }
 }
