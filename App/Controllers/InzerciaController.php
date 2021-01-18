@@ -18,9 +18,9 @@ class InzerciaController extends AControllerBase
         $formData = $this->app->getRequest()->getPost();
         $data = [];
         if (isset($formData['submit'])) {
-            $login = Auth::getInstance()->getLoggedUser()->getLogin();
-            $inzerat = new Inzerat($_POST['nadpis'], $_POST['text'], $_POST['typ'], $_POST['kategoria'], $_POST['cena'],
-                $_POST['telefonneCislo'], $_POST['email'], $login);
+            $user_id = Auth::getInstance()->getLoggedUser()->getId();
+            $inzerat = new Inzerat($user_id, $_POST['nadpis'], $_POST['text'], $_POST['typ'], $_POST['kategoria'], $_POST['cena'],
+                $_POST['telefonneCislo'], $_POST['email']);
             $validacia = $this->validuj($_POST['nadpis'], $_POST['text'], $_POST['cena'], $_POST['telefonneCislo'], $_POST['email']);
             if ($validacia == null) {
                 $inzerat->save();
@@ -114,5 +114,9 @@ class InzerciaController extends AControllerBase
 
     public function predam() {
         return $this->html(Inzerat::getAll(" typ LIKE ?", ["Predám"]));
+    }
+
+    public function moje() {
+        return $this->html(Inzerat::getAll(" user_id LIKE ?", [Auth::getInstance()->getLoggedUser()->getId()]));
     }
 }

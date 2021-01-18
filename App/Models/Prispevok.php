@@ -9,20 +9,20 @@ use stdClass;
 class Prispevok extends Model implements JsonSerializable
 {
     protected $id;
-    protected $user_login;
+    protected $user_id;
     protected $nazov;
     protected $text;
 
-    public function __construct($user_login = '', $nazov = '', $text = '')
+    public function __construct($user_id = '', $nazov = '', $text = '')
     {
-        $this->user_login = $user_login;
+        $this->user_id = $user_id;
         $this->nazov = $nazov;
         $this->text = $text;
     }
 
     static public function setDbColumns()
     {
-        return ["id", "user_login", "nazov", "text"];
+        return ["id", "user_id", "nazov", "text"];
     }
 
     static public function setTableName()
@@ -39,28 +39,20 @@ class Prispevok extends Model implements JsonSerializable
     }
 
     /**
-     * @param mixed|string $id
-     */
-    public function setId($id): void
-    {
-        $this->id = $id;
-    }
-
-    /**
      * @return mixed|string
      */
-    public function getUserLogin()
+    public function getUserId()
     {
-        return $this->user_login;
+        return $this->user_id;
     }
 
     /**
-     * @param mixed|string $user_login
-     */
-    public function setUserLogin($user_login): void
+     * @param mixed|string $user_id
+
+    public function setUserId($user_id): void
     {
-        $this->user_login = $user_login;
-    }
+        $this->user_id = $user_id;
+    } */
 
     /**
      * @return mixed|string
@@ -98,7 +90,7 @@ class Prispevok extends Model implements JsonSerializable
     {
         $o = new stdClass();
         $o->id = $this->id;
-        $o->user = $this->user_login;
+        $o->user = User::getOne($this->user_id)->getLogin();
         $o->name = $this->nazov;
         $o->text = $this->text;
         return $o;

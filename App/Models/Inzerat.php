@@ -7,6 +7,7 @@ use App\Core\Model;
 class Inzerat extends Model
 {
     protected $id;
+    protected $user_id;
     protected $nadpis;
     protected $text;
     protected $typ;
@@ -14,10 +15,10 @@ class Inzerat extends Model
     protected $cena;
     protected $telefonneCislo;
     protected $email;
-    protected $user_login;
 
     /**
      * Inzerat constructor.
+     * @param $user_id
      * @param $nadpis
      * @param $text
      * @param $typ
@@ -26,8 +27,9 @@ class Inzerat extends Model
      * @param $telefonneCislo
      * @param $email
      */
-    public function __construct($nadpis = "", $text = "", $typ = "", $kategoria = "", $cena = "", $telefonneCislo = "", $email = "", $user_login="")
+    public function __construct($user_id = "", $nadpis = "", $text = "", $typ = "", $kategoria = "", $cena = "", $telefonneCislo = "", $email = "")
     {
+        $this->user_id = $user_id;
         $this->nadpis = $nadpis;
         $this->text = $text;
         $this->typ = $typ;
@@ -35,12 +37,11 @@ class Inzerat extends Model
         $this->cena = $cena;
         $this->telefonneCislo = $telefonneCislo;
         $this->email = $email;
-        $this->user_login = $user_login;
     }
 
     static public function setDbColumns()
     {
-        return ['id', 'nadpis', 'text', 'typ', 'kategoria', 'cena', 'telefonneCislo', 'email', 'user_login'];
+        return ['id', 'user_id', 'nadpis', 'text', 'typ', 'kategoria', 'cena', 'telefonneCislo', 'email'];
     }
 
     static public function setTableName()
@@ -171,16 +172,8 @@ class Inzerat extends Model
     /**
      * @return mixed|string
      */
-    public function getUserLogin()
+    public function getUserId()
     {
-        return $this->user_login;
-    }
-
-    /**
-     * @param mixed|string $user_login
-     */
-    public function setUserLogin($user_login): void
-    {
-        $this->user_login = $user_login;
+        return $this->user_id;
     }
 }

@@ -9,20 +9,20 @@ use stdClass;
 class Odpoved extends Model implements JsonSerializable
 {
     protected $id;
-    protected $user;
-    protected $prispevok;
+    protected $user_id;
+    protected $prispevok_id;
     protected $text;
 
-    public function __construct($user = '', $prispevok = '', $text = '')
+    public function __construct($user_id = '', $prispevok_id = '', $text = '')
     {
-        $this->user = $user;
-        $this->prispevok = $prispevok;
+        $this->user_id = $user_id;
+        $this->prispevok_id = $prispevok_id;
         $this->text = $text;
     }
 
     static public function setDbColumns()
     {
-        return ["id", "user", "prispevok", "text"];
+        return ["id", "user_id", "prispevok_id", "text"];
     }
 
     static public function setTableName()
@@ -39,43 +39,27 @@ class Odpoved extends Model implements JsonSerializable
     }
 
     /**
-     * @param mixed|string $id
-     */
-    public function setId($id): void
-    {
-        $this->id = $id;
-    }
-
-    /**
      * @return mixed|string
      */
-    public function getUser()
+    public function getUserId()
     {
-        return $this->user;
-    }
-
-    /**
-     * @param mixed|string $user
-     */
-    public function setUser($user): void
-    {
-        $this->user = $user;
+        return $this->user_id;
     }
 
     /**
      * @return mixed
      */
-    public function getPrispevok()
+    public function getPrispevokId()
     {
-        return $this->prispevok;
+        return $this->prispevok_id;
     }
 
     /**
-     * @param mixed $prispevok
+     * @param mixed $prispevok_id
      */
-    public function setPrispevok($prispevok): void
+    public function setPrispevokId($prispevok_id): void
     {
-        $this->inzerat = $prispevok;
+        $this->prispevok_id = $prispevok_id;
     }
 
     /**
@@ -98,8 +82,8 @@ class Odpoved extends Model implements JsonSerializable
     {
         $o = new stdClass();
         $o->id = $this->id;
-        $o->user = $this->user;
-        $o->name = $this->prispevok;
+        $o->user = User::getOne($this->user_id)->getLogin();
+        $o->name = $this->prispevok_id;
         $o->text = $this->text;
         return $o;
     }

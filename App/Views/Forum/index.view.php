@@ -5,7 +5,7 @@
     </div>
     <div class="buttonPridaj">
         <a <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?> href="?c=forum&a=pridat" <?php } else { ?>
-            href="?c=login" <?php } ?> class="btn btn-primary" type="button">Pridaj príspevok</a>
+            href="?c=login" <?php } ?> class="btn btn-primary">Pridaj príspevok</a>
     </div>
     <table class="table table-striped table-light" id="table">
         <thead>

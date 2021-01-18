@@ -35,6 +35,14 @@ class User extends Model
     }
 
     /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
      * @return mixed
      */
     public function getLogin()

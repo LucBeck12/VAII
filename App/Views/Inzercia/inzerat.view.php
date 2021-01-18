@@ -1,7 +1,6 @@
-<html>
 <div class="buttonPridaj">
     <a <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?> href="?c=inzercia&a=pridaj" <?php } else { ?>
-        href="?c=login" <?php } ?> class="btn btn-primary" type="button">Pridaj inzerát</a>
+        href="?c=login" <?php } ?> class="btn btn-primary">Pridaj inzerát</a>
 </div>
 <div class="fotogaleria">
     <?php /** @var \App\Models\Inzerat[] $data */
@@ -19,7 +18,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><b>Typ: </b>
                         <a class="card-link"
-                           href=<?= $inzerat->getTyp() == "Kúpim" ? "?c=inzercia&a=kupim" : "?c=inzercia&a=predam" ?>><?= $inzerat->getTyp() ?> </a>
+                           href="<?= $inzerat->getTyp() == "Kúpim" ? "?c=inzercia&a=kupim" : "?c=inzercia&a=predam" ?>"><?= $inzerat->getTyp() ?> </a>
                     </li>
                     <li class="list-group-item"><b>Kategória: </b><?= $inzerat->getKategoria() ?> </li>
                     <?php if (!empty($inzerat->getCena())) { ?>
@@ -34,7 +33,7 @@
                         <li class="list-group-item"><b>Email: </b><?= $inzerat->getEmail() ?> </li>
                     <?php } ?>
                 </ul>
-                <?php if (\App\Models\Auth::getInstance()->isLogged() && \App\Models\Auth::getInstance()->getLoggedUser()->getLogin() == $inzerat->getUserLogin()) { ?>
+                <?php if (\App\Models\Auth::getInstance()->isLogged() && \App\Models\Auth::getInstance()->getLoggedUser()->getId() == $inzerat->getUserId()) { ?>
                     <div class="card-body">
                         <a class="card-link" href="?c=inzercia&a=uprav&id=<?= $inzerat->getId() ?>">Upraviť</a>
 
@@ -65,4 +64,3 @@
         <?php }
     } ?>
 </div>
-</html>

@@ -34,7 +34,8 @@ class Auth
         } else if (count($najdeny) == 0) {
             $heslo = password_hash($heslo, PASSWORD_DEFAULT);
             $user = new User($login, $heslo);
-            $user->save();
+            $user_id = $user->save();
+            $user = User::getOne($user_id);
             $_SESSION['user'] = $user;
             return true;
         }

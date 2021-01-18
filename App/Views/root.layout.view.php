@@ -1,7 +1,6 @@
-<?php
-/** @var string $contentHTML */
-?>
-<html>
+<?php /** @var string $contentHTML */ ?>
+<!DOCTYPE html>
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +44,7 @@
                 <a class="nav-link" href="?c=home&a=pamiatky">Pamiatky <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <a class="nav-link dropdown-toggle" href="#" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Inzercia
                 </a>
@@ -56,6 +55,9 @@
                     <a class="dropdown-item" href="?c=inzercia">Pozri inzeráty</a>
                     <a class="dropdown-item" href="?c=inzercia&a=kupim">Kúpim</a>
                     <a class="dropdown-item" href="?c=inzercia&a=predam">Predám</a>
+                    <?php if (\App\Models\Auth::getInstance()->isLogged()) { ?>
+                        <a class="dropdown-item" href="?c=inzercia&a=moje">Moje inzeráty</a>
+                    <?php } ?>
                 </div>
             </li>
             <li class="nav-item dropdown">

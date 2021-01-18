@@ -19,8 +19,8 @@ class ForumController extends AControllerBase
     public function pridat()
     {
         if (isset($_POST['nadpis']) && isset($_POST['text']) && ($_POST['chybyInput'] == "")) {
-            $login = Auth::getInstance()->getLoggedUser()->getLogin();
-            $prispevok = new Prispevok($login, $_POST['nadpis'], $_POST['text']);
+            $user_id = Auth::getInstance()->getLoggedUser()->getId();
+            $prispevok = new Prispevok($user_id, $_POST['nadpis'], $_POST['text']);
             $prispevok->save();
             $this->json("ok");
             return $this->redirect('?c=forum');
@@ -41,9 +41,9 @@ class ForumController extends AControllerBase
     public function prispevok()
     {
         if (isset($_POST['odpoved']) && isset($_POST['idPrispevku'])) {
-            $login = Auth::getInstance()->getLoggedUser()->getLogin();
+            $user_id = Auth::getInstance()->getLoggedUser()->getId();
             $idPrispevku = $_POST['idPrispevku'];
-            $odpoved = new Odpoved($login, $idPrispevku, $_POST['odpoved']);
+            $odpoved = new Odpoved($user_id, $idPrispevku, $_POST['odpoved']);
             $odpoved->save();
             $this->json("ok");
         }
@@ -53,7 +53,7 @@ class ForumController extends AControllerBase
     public function zmaz()
     {
         if (isset($_GET['id'])) {
-            $odpovede = Odpoved::getAll(" prispevok LIKE ?", [$_GET['id']]);
+            $odpovede = Odpoved::getAll(" prispevok_id LIKE ?", [$_GET['id']]);
             foreach ($odpovede as $data) {
                 $data->delete();
             }

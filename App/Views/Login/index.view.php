@@ -6,10 +6,10 @@
     </div>
     <form method="post">
         <div class="form-group">
-            <label for="login" class="sr-only">Login</label>
+            <label class="sr-only">Login</label>
             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Login"
                    name="login" value="<?= (!empty(@$data['login']) ? $data['login'] : "") ?>"
-                   autofocus="">
+                   autofocus="" required>
 
             <?php if (isset($data['chyby'][0])) {
                 foreach ($data['chyby'][0] as $err) { ?>
@@ -19,7 +19,7 @@
         </div>
         <div class="form-group">
             <label for="inputPassword" class="sr-only">Heslo</label>
-            <input type="password" name="heslo" id="inputPassword" class="form-control" placeholder="Password">
+            <input type="password" name="heslo" id="inputPassword" class="form-control" placeholder="Password" required>
 
             <?php if (isset($data['chyby'][1])) {
                 foreach ($data['chyby'][1] as $err) { ?>

@@ -12,9 +12,9 @@
                 <form method="post">
                     <div class="form-group">
                         <textarea name="odpoved" id="odpoved" class="form-control" rows="1"
-                                  placeholder="Zadajte odpoveď"></textarea>
+                                  placeholder="Zadajte odpoveď" required></textarea>
                         <input class="btn btn-primary" type="submit" id="odoslatOdpoved" name="submit" value="Odoslať">
-                        <input class="hidden" id="idPrispevku" name="idPrispevku"></input>
+                        <input class="hidden" id="idPrispevku" name="idPrispevku">
                     </div>
                 </form>
                 <div class="card cardComments">

@@ -5,7 +5,8 @@
     <?php } ?>
     <div class="form-group">
         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Zadajte nadpis"
-               name="nadpis" value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getNadpis() : "") ?>">
+               name="nadpis" value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getNadpis() : "") ?>"
+               autocomplete="off" required>
 
         <?php if (isset($data['chyby'][0])) {
             foreach ($data['chyby'][0] as $err) { ?>
@@ -14,8 +15,8 @@
         } ?>
     </div>
     <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="Zadajte text"
-                      name="text"><?= (!empty(@$data['inzerat']) ? $data['inzerat']->getText() : "") ?></textarea>
+        <textarea class="form-control" rows="3" placeholder="Zadajte text"
+                  name="text" required><?= (!empty(@$data['inzerat']) ? $data['inzerat']->getText() : "") ?></textarea>
 
         <?php if (isset($data['chyby'][1])) {
             foreach ($data['chyby'][1] as $err) { ?>
@@ -70,16 +71,17 @@
     <div class="form-row">
         <div class="col-2">
             <input type="text" class="form-control" placeholder="Zadajte cenu" name="cena"
-                   value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getCena() : "") ?>">
+                   value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getCena() : "") ?>" autocomplete="off">
         </div>
         <label class="eur"> € </label>
         <div class="col">
             <input type="text" class="form-control" placeholder="Zadajte telefónne číslo" name="telefonneCislo"
-                   value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getTelefonneCislo() : "") ?>">
+                   value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getTelefonneCislo() : "") ?>"
+                   autocomplete="off">
         </div>
         <div class="col">
             <input type="email" class="form-control" placeholder="Zadajte email" name="email"
-                   value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getEmail() : "") ?>">
+                   value="<?= (!empty(@$data['inzerat']) ? $data['inzerat']->getEmail() : "") ?>" autocomplete="off">
         </div>
     </div>
     <div class="chyby">
@@ -102,5 +104,5 @@
         } ?>
     </div>
     <input class="btn btn-primary buttonForm" type="submit" name="submit" value="Odoslať">
-    <a href="?c=inzercia" id="cancel" name="cancel" class="btn btn-default buttonForm">Zrušiť</a>
+    <a href="?c=inzercia" id="cancel" class="btn btn-default buttonForm">Zrušiť</a>
 </form>
