@@ -1,4 +1,3 @@
-<?php ?>
 <div class="zaklad modrePozadie">
     <div class="nadpis">
         <h1>PRIDANIE NOVÉHO INZERÁTU</h1>

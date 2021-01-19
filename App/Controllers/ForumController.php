@@ -10,7 +10,6 @@ use App\Models\Prispevok;
 
 class ForumController extends AControllerBase
 {
-
     public function index()
     {
         return $this->html();

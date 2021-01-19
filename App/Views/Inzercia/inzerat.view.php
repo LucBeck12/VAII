@@ -36,27 +36,6 @@
                 <?php if (\App\Models\Auth::getInstance()->isLogged() && \App\Models\Auth::getInstance()->getLoggedUser()->getId() == $inzerat->getUserId()) { ?>
                     <div class="card-body">
                         <a class="card-link" href="?c=inzercia&a=uprav&id=<?= $inzerat->getId() ?>">Upraviť</a>
-
-                        <!--<a type="button" class="card-link" data-toggle="modal" data-target="#exampleModal">Zmazať</a>
-
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Zmazať inzerát</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">Naozaj si prajete zmazať inzerát?</div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Nie</button>
-                                        <a type="button" class="btn btn-primary" href="?c=inzercia&a=zmaz&id=/*$inzerat->getId() */">Áno</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-
                         <a class="card-link" href="?c=inzercia&a=zmaz&id=<?= $inzerat->getId() ?>">Zmazať</a>
                     </div>
                 <?php } ?>

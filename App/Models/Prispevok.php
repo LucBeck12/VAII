@@ -47,14 +47,6 @@ class Prispevok extends Model implements JsonSerializable
     }
 
     /**
-     * @param mixed|string $user_id
-
-    public function setUserId($user_id): void
-    {
-        $this->user_id = $user_id;
-    } */
-
-    /**
      * @return mixed|string
      */
     public function getNazov()

@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
             integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="http://localhost/semka/public/css.css">
+    <link rel="stylesheet" media="screen" href="http://localhost/semka/public/css.css">
     <script src="http://localhost/semka/public/js.js"></script>
 </head>
 <body>

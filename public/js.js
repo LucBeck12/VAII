@@ -4,7 +4,7 @@ class Js {
             this.getPrispevky("table", "vsetky");
             this.getPrispevky("table2", "moje");
             this.getPrispevky("table1", "pouzivatela");
-            this.getOdpovede();
+            this.getPrispevky(null, "profil");
         }, 2000);
         this.getPrispevky(null, "profil");
         this.getPrispevky("table", "vsetky");
@@ -57,6 +57,9 @@ class Js {
     }
 
     getPrispevky(tabulka, ktore) {
+        if (sessionStorage.getItem('scroll') !== null)
+            window.scrollTo(0, sessionStorage.getItem('scroll'));
+        sessionStorage.setItem('scroll', window.scrollY);
         fetch("?c=forum&a=getallprispevky")
             .then((response) => {
                 return response.json();
@@ -115,9 +118,6 @@ class Js {
     }
 
     getOdpovede() {
-        /* if (localStorage.getItem('scroll') !== null)
-             window.scrollTo(0, sessionStorage.getItem('scroll'));
-     sessionStorage.setItem('scroll', window.scrollY);*/
         fetch("?c=forum&a=getallodpovede")
             .then((response) => {
                 return response.json();
@@ -252,79 +252,3 @@ var js;
 window.addEventListener('load', function () {
     js = new Js();
 });
-
-/*window.addEventListener('scroll', function () {
-    sessionStorage.setItem('scroll', window.scrollY);
-});
-
-*/
-
-/*getMojePrispevky() {
-    fetch("?c=forum&a=getallprispevky")
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            var table = document.getElementById("table2").getElementsByTagName("tbody")[0];
-            table.innerText = "";
-            data.forEach((item) => {
-                if (document.getElementById("loggedUser").innerText == item.user) {
-                    var row = table.insertRow();
-                    var idCell = row.insertCell(0);
-                    var nazovCell = row.insertCell(1);
-
-                    idCell.innerHTML = item.id;
-                    this.link(item.name, nazovCell, item.text);
-                    this.buttons(item.user, row)
-                }
-            });
-        });
-}
-
-getPrispevkyPouzivatela() {
-    fetch("?c=forum&a=getallprispevky")
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            var table = document.getElementById("table1").getElementsByTagName("tbody")[0];
-            table.innerText = "";
-            data.forEach((item) => {
-                if (sessionStorage.getItem("login") == item.user) {
-
-                    var row = table.insertRow();
-                    var idCell = row.insertCell(0);
-                    var nazovCell = row.insertCell(1);
-
-                    idCell.innerHTML = item.id;
-                    this.link(item.name, nazovCell, item.text);
-                }
-            });
-            document.getElementById("h2pridat profil").innerText = "Príspevky používateľa " + sessionStorage.getItem("login");
-        });
-};
-
-
-getVsetkyPrispevky() {
-    this.getPrispevky("table", "vsetky");
-}
-
-
-
-    getProfilPrispevku() {
-        fetch("?c=forum&a=getallprispevky")
-            .then((response) => {
-                return response.json();
-            })
-            .then((data) => {
-                data.forEach((item) => {
-        //if (sessionStorage.getItem("nazov") == item.name && sessionStorage.getItem("text") == item.text) {
-        document.getElementById("nazovPrispevku").innerText = "Príspevok " +
-            document.getElementById("prispevokNazov").innerText;
-        document.getElementById("textPrispevku").innerText =
-            document.getElementById("prispevokText").innerText;
-        //}
-        });
-    });
-    }
-    */

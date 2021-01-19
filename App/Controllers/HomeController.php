@@ -6,7 +6,6 @@ use App\Core\AControllerBase;
 
 class HomeController extends AControllerBase
 {
-
     public function index()
     {
         return $this->html();
