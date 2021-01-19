@@ -57,9 +57,6 @@ class Js {
     }
 
     getPrispevky(tabulka, ktore) {
-        if (sessionStorage.getItem('scroll') !== null)
-            window.scrollTo(0, sessionStorage.getItem('scroll'));
-        sessionStorage.setItem('scroll', window.scrollY);
         fetch("?c=forum&a=getallprispevky")
             .then((response) => {
                 return response.json();
