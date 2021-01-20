@@ -14,18 +14,18 @@ class LoginController extends AControllerBase
         $validacia = null;
         $data = [];
         if (isset($_POST['login'])) {
-            $bool = Auth::getInstance()->login($_POST['login'], $_POST['heslo']);
             $validacia = $this->validuj($_POST['login'], $_POST['heslo']);
-            if ($bool && $validacia == null) {
-                return $this->redirect('?c=home');
-            } else {
-                if (!$bool) {
+            if ($validacia == null) {
+                $bool = Auth::getInstance()->login($_POST['login'], $_POST['heslo']);
+                if ($bool) {
+                    return $this->redirect('?c=home');
+                } else {
                     $chyba[] = "Nesprávny login alebo heslo!";
                     $data = ['login' => $_POST['login'], 'chyby' => [null, $chyba]];
                     return $this->html($data, 'index');
                 }
-                $data = ($validacia != null ? ['login' => $_POST['login'], 'chyby' => $validacia] : []);
             }
+            $data = ($validacia != null ? ['login' => $_POST['login'], 'chyby' => $validacia] : []);
         }
         return $this->html($data, 'index');
     }
